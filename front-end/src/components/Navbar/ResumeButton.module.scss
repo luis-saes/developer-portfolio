@@ -1,0 +1,36 @@
+@import "../../sassStyles/variables";
+
+.button {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 6px 10px;
+
+  background-color: transparent;
+  font-family: "Questrial";
+  text-align: center;
+  font-size: 16px;
+  transition: 200ms;
+  position: relative;
+}
+
+.light.button {
+  border-color: $complementar-light;
+  color: $complementar-light;
+}
+
+.dark.button {
+  border-color: $complementar-dark;
+  color: $complementar-dark;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.light.button:hover {
+  background-color: $complementar-light;
+}
+
+.dark.button:hover {
+  background-color: $complementar-dark;
+}
