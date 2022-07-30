@@ -1,0 +1,39 @@
+@import "../../sassStyles/variables";
+
+.horFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.select {
+  border: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.light {
+  color: $text-light;
+  background-color: $primary-light;
+}
+
+.verticalLine {
+  height: 25px;
+  margin-left: 4px;
+}
+
+.light.verticalLine {
+  border-left: 1px solid $text-light;
+}
+
+.dark {
+  color: $text-dark;
+  background-color: $primary-dark;
+}
+
+.dark.verticalLine {
+  border-left: 1px solid $text-dark;
+}
