@@ -29,6 +29,7 @@ const Temp = () => {
       <Dropdown.Menu>
         {languages.map(({ code, name }) => (
           <DropdownItem
+            key={code}
             href={`#/action-${code}`}
             onClick={() => i18next.changeLanguage(code)}
             disabled={code === currentLanguageCode}

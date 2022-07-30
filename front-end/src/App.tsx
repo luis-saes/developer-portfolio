@@ -1,14 +1,15 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import "./App.css";
+import React, { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
 import Temp from "./components/Temp";
+import Navbar from "./components/Navbar/Navbar";
+import "./sassStyles/_main.scss";
 
 function App() {
-  const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="container">
-      <div className="d-flex flex-column align-items-start">{t("hello")}</div>
+    <div className={theme}>
+      <Navbar />
       <Temp />
     </div>
   );
