@@ -1,14 +1,23 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-import "./App.css";
+import React, { useState } from "react";
 import Temp from "./components/Temp";
+import Navbar from "./components/Navbar/Navbar";
+import "./sassStyles/_main.scss";
 
 function App() {
-  const { t } = useTranslation();
+  const [theme, setTheme] = useState("light");
+
+  const switchTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+    console.log("Changed");
+  };
 
   return (
-    <div className="container">
-      <div className="d-flex flex-column align-items-start">{t("hello")}</div>
+    <div className={theme}>
+      <Navbar switchTheme={switchTheme} />
       <Temp />
     </div>
   );
