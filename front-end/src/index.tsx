@@ -6,7 +6,9 @@ import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import { ThemeProvider } from "./context/ThemeContext";
 import App from "./App";
-import "./index.css";
+import "./fonts/questrial-regular.ttf";
+import "./sassStyles/_global.scss";
+import "./sassStyles/_main.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 i18n

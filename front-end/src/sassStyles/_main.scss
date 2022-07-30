@@ -1,5 +1,12 @@
 @import "./variables";
 
+@font-face {
+  font-family: "Questrial";
+  src: local("Questrial"),
+    url("../fonts/questrial-regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
 .light {
   color: $text-light;
   background-color: $primary-light;
