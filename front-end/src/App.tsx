@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
-import Temp from "./components/Temp";
 import Navbar from "./components/Navbar/Navbar";
 import "./sassStyles/_main.scss";
 
@@ -10,7 +9,6 @@ function App() {
   return (
     <div className={theme}>
       <Navbar />
-      <Temp />
     </div>
   );
 }
