@@ -1,23 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
 import Temp from "./components/Temp";
 import Navbar from "./components/Navbar/Navbar";
 import "./sassStyles/_main.scss";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  const switchTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-    console.log("Changed");
-  };
+  const { theme } = useContext(ThemeContext);
 
   return (
     <div className={theme}>
-      <Navbar switchTheme={switchTheme} />
+      <Navbar />
       <Temp />
     </div>
   );

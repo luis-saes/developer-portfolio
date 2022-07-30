@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
+import { ThemeContext } from "../../context/ThemeContext";
 
-type PrivateProps = {
-  switchTheme: () => void;
-};
+const Navbar = () => {
+  const { theme, setTheme } = useContext(ThemeContext);
 
-const Navbar = (props: PrivateProps) => {
+  const switchTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+    console.log("Changed");
+  };
+
   return (
     <div>
-      <Button onClick={props.switchTheme}>Switch Theme!</Button>
+      <Button onClick={switchTheme}>Switch Theme!</Button>
     </div>
   );
 };

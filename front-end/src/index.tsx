@@ -4,6 +4,7 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 import HttpApi from "i18next-http-backend";
+import { ThemeProvider } from "./context/ThemeContext";
 import App from "./App";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -43,7 +44,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </React.StrictMode>
   </Suspense>
 );
