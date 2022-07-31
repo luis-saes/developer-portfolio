@@ -1,0 +1,66 @@
+@import "../../sassStyles/variables";
+
+.skillProgressWrapper {
+  height: 70px;
+  width: 370px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.light.skillProgressWrapper {
+  background-color: $secondary-light;
+}
+
+.dark.skillProgressWrapper {
+  background-color: $secondary-dark;
+}
+
+.svg {
+  margin-left: 20px;
+  width: 40px;
+  height: auto;
+}
+
+.light .svg {
+  fill: $text-light;
+}
+
+.dark .svg {
+  fill: $text-dark;
+}
+
+.technology {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.textWrapper {
+  width: 100%;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.progressBar {
+  width: 100%;
+  height: 16px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 100%;
+}
+
+.light .bar > div {
+  background-color: $complementar-light !important;
+}
+
+.dark .bar > div {
+  background-color: $complementar-dark !important;
+}
