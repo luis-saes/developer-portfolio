@@ -4,6 +4,7 @@ import CustomNavbar from "./components/Navbar/CustomNavbar";
 import CustomTitle from "./components/Generics/CustomTitle";
 import GenericSectionsButton from "./components/Generics/GenericSectionsButton";
 import SkillProgress from "./components/Skills/SkillProgress";
+import SVGs from "./components/Skills/SvgImports";
 import "./sassStyles/_main.scss";
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
       <CustomNavbar />
       <CustomTitle />
       <GenericSectionsButton />
-      <SkillProgress />
+      {SVGs.map(({ element, text, percentage }) => (
+        <SkillProgress icon={element} text={text} percentage={percentage} />
+      ))}
     </div>
   );
 }
