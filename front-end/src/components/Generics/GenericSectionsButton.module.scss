@@ -1,0 +1,45 @@
+@import "../../sassStyles/variables";
+
+@import "../../sassStyles/variables";
+
+.button {
+  border: 1px solid;
+  border-radius: 5px;
+  height: 28px;
+  padding: 6px 10px;
+
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-family: "SF Pro";
+  text-align: center;
+  font-size: 16px;
+  transition: 200ms;
+  position: relative;
+}
+
+.light.button {
+  border-color: $complementar-light;
+  color: $text-light;
+}
+
+.dark.button {
+  border-color: $complementar-dark;
+  color: $text-dark;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.light.button:hover {
+  background-color: $complementar-light;
+}
+
+.dark.button:hover {
+  background-color: $complementar-dark;
+}
+
+.collapsed {
+  margin: 7px 0px;
+}
