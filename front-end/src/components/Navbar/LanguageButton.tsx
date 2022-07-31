@@ -23,27 +23,24 @@ const LanguageButton = () => {
   const currentLanguageCode = Cookies.get("i18next") || "en";
 
   return (
-    <div className={styles.horFlex}>
-      <select
-        name="languages"
-        id="languages"
-        className={`${styles[theme]} ${styles.select}`}
-      >
-        {languages.map(({ code, name }) => {
-          return (
-            <option
-              key={code}
-              onClick={() => i18next.changeLanguage(code)}
-              disabled={code === currentLanguageCode}
-              selected={code === currentLanguageCode}
-            >
-              {name}
-            </option>
-          );
-        })}
-      </select>
-      <div className={`${styles[theme]} ${styles.verticalLine}`}></div>
-    </div>
+    <select
+      name="languages"
+      id="languages"
+      className={`${styles[theme]} ${styles.select}`}
+    >
+      {languages.map(({ code, name }) => {
+        return (
+          <option
+            key={code}
+            onClick={() => i18next.changeLanguage(code)}
+            disabled={code === currentLanguageCode}
+            selected={code === currentLanguageCode}
+          >
+            {name}
+          </option>
+        );
+      })}
+    </select>
   );
 };
 

@@ -3,8 +3,11 @@
 .button {
   border: 1px solid;
   border-radius: 5px;
+  height: 28px;
   padding: 6px 10px;
 
+  display: flex;
+  align-items: center;
   background-color: transparent;
   font-family: "Questrial";
   text-align: center;
@@ -33,4 +36,8 @@
 
 .dark.button:hover {
   background-color: $complementar-dark;
+}
+
+.collapsed {
+  margin: 7px 0px;
 }

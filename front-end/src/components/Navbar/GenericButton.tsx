@@ -11,7 +11,7 @@ const GenericButton = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <button className={`${styles.button} ${styles[theme]}`}>
+    <button className={`mx-2 ${styles.button} ${styles[theme]}`}>
       {props.text}
     </button>
   );

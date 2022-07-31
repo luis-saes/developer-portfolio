@@ -1,0 +1,45 @@
+@import "../../sassStyles/variables";
+
+.main {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-around;
+}
+
+.main.dark {
+  background-color: $primary-light;
+}
+
+.main.dark {
+  background-color: $primary-dark;
+}
+
+.light .svg {
+  fill: $complementar-light;
+}
+
+.dark .svg {
+  fill: $complementar-dark;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: end !important;
+  justify-content: flex-end !important;
+  align-self: flex-end !important;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
