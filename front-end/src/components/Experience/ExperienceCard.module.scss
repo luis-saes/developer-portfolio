@@ -1,0 +1,41 @@
+@import "../../sassStyles/variables";
+
+.experienceCardWrapper {
+  font-family: "SF Pro";
+  width: 762px;
+  border-radius: 10px;
+}
+
+.light.experienceCardWrapper {
+  background-color: $secondary-light;
+}
+
+.dark.experienceCardWrapper {
+  background-color: $secondary-dark;
+}
+
+.roleAndCompany {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+
+.company {
+  margin-left: 6px;
+}
+
+.light .company {
+  color: $complementar-light;
+}
+
+.dark .company {
+  color: $complementar-dark;
+}
+
+.timeInterval {
+  font-size: 10px;
+}
+
+.topics {
+  font-size: 16px;
+}
