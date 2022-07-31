@@ -4,13 +4,18 @@ import styles from "./ResumeButton.module.scss";
 
 type PrivateProps = {
   text: string;
+  expanded: boolean;
 };
 
 const ResumeButton = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <button className={`${styles[theme]} ${styles.button}`}>
+    <button
+      className={`${styles[theme]} ${styles.button} ${
+        props.expanded ? "" : styles.collapsed
+      }`}
+    >
       {props.text}
     </button>
   );

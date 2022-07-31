@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
-import Navbar from "./components/Navbar/Navbar";
+import CustomNavbar from "./components/Navbar/CustomNavbar";
 import "./sassStyles/_main.scss";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={theme}>
-      <Navbar />
+      <CustomNavbar />
     </div>
   );
 }

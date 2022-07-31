@@ -2,7 +2,11 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./ThemeButton.module.scss";
 
-const ThemeButton = () => {
+type PrivateProps = {
+  expanded: Boolean;
+};
+
+const ThemeButton = (props: PrivateProps) => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const sunFill = (
@@ -39,7 +43,14 @@ const ThemeButton = () => {
   };
 
   return (
-    <button onClick={switchTheme} className={styles.themeButton}>
+    <button
+      onClick={switchTheme}
+      className={`${styles.themeButton} ${
+        props.expanded
+          ? styles.themeButtonExpanded
+          : styles.themeButtonCollapsed
+      }`}
+    >
       {theme === "light" ? sunFill : moon}
     </button>
   );
