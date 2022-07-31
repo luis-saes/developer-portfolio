@@ -1,0 +1,14 @@
+@import "../../sassStyles/variables";
+
+.title {
+  margin-top: 20vh;
+  font-size: $title-font-size;
+}
+
+.light.title {
+  color: $complementar-light;
+}
+
+.dark.title {
+  color: $complementar-dark;
+}
