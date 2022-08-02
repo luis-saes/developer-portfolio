@@ -1,0 +1,114 @@
+@import "../../sassStyles/variables";
+
+.verticalTabList {
+  height: 30px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.svg {
+  margin-left: 10px;
+}
+
+.bar {
+  height: 40px;
+  border-left: 2px solid;
+}
+
+.wrapper {
+  cursor: pointer;
+}
+
+.dark .wrapper {
+  background-color: $primary-dark;
+  cursor: pointer;
+}
+
+.light .wrapper {
+  background-color: $primary-light;
+  cursor: pointer;
+}
+
+.bar {
+  transition: border-color;
+  transition-duration: 500ms;
+}
+
+.light .active {
+  .bar {
+    border-color: $complementar-light;
+  }
+
+  .svg {
+    fill: $complementar-light;
+  }
+
+  .text {
+    color: $complementar-light;
+  }
+}
+
+.light .inactive {
+  .bar {
+    border-color: $text-light;
+  }
+
+  .svg {
+    fill: $text-light;
+  }
+
+  .text {
+    color: $text-light;
+  }
+}
+
+.dark .active {
+  .bar {
+    border-color: $complementar-dark;
+  }
+
+  .svg {
+    fill: $complementar-dark;
+  }
+
+  .text {
+    color: $complementar-dark;
+  }
+}
+
+.dark .inactive {
+  .bar {
+    border-color: $text-dark;
+  }
+
+  .svg {
+    fill: $text-dark;
+  }
+
+  .text {
+    color: $text-dark;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 130px;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
