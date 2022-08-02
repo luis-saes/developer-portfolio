@@ -1,6 +1,6 @@
 import React, { useContext, createElement, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import styles from "./VerticalTabList.module.scss";
+import styles from "./HorizontalTabList.module.scss";
 
 type PrivateProps = {
   companies: any;
@@ -18,7 +18,7 @@ const VerticalTabList = (props: PrivateProps) => {
   };
 
   return (
-    <div className={`${styles[theme]} ${styles.verticalTabList}`}>
+    <div className={`${styles[theme]} ${styles.horizontalTabList}`}>
       {props.companies.map(
         (
           {
@@ -40,9 +40,8 @@ const VerticalTabList = (props: PrivateProps) => {
               }`}
               onClick={() => changeIndexAndCallFather(index)}
             >
-              <div className={styles.bar} />
               <div className={styles.svg}>{createElement(element)}</div>
-              <div className={styles.text}>{text}</div>
+              <div className={styles.bar} />
             </div>
           );
         }
