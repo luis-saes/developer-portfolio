@@ -35,6 +35,12 @@
   "endTime1": "Placeholder",
   "topics1": ["Placeholder", "Placeholder", "Placeholder"],
 
+  "role2": "Placeholder",
+  "company2": "Placeholder",
+  "startTime2": "Placeholder",
+  "endTime2": "Placeholder",
+  "topics2": ["Placeholder", "Placeholder", "Placeholder"],
+
   "portfolioTitle": "Portfolio",
 
   "projectTitle0": "Generic Dashboard",
