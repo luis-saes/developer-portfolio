@@ -1,0 +1,17 @@
+@import "../../sassStyles/variables";
+
+.bg {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 77px;
+  background-color: #dd4f39;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.light.bg {
+  background-color: $secondary-light;
+}
+
+.dark.bg {
+  background-color: $secondary-dark;
+}

@@ -13,7 +13,7 @@
   "hello": "Olá 👋, me chamo",
   "role": "Desenvolvedor Full Stack",
   "whoIAm": "Sobre mim",
-  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
+  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
   "mySkills": "Minhas Habilidades",
   "tools": "Ferramentas",
   "other": "Outros",
