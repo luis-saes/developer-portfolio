@@ -1,0 +1,46 @@
+@import "../sassStyles/variables";
+
+.main {
+  margin-top: -70px;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textAndImageWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.text {
+  width: 600px;
+  margin-right: 100px;
+}
+
+.light .wrapper {
+  background-color: $secondary-light;
+}
+.dark .wrapper {
+  background-color: $secondary-dark;
+}
+
+@media (max-width: 1000px) {
+  .textAndImageWrapper {
+    flex-direction: column;
+  }
+
+  .text {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    width: 80vw;
+  }
+}

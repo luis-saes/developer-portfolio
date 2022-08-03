@@ -3,16 +3,19 @@ import { useTranslation } from "react-i18next";
 import { ThemeContext } from "./context/ThemeContext";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import Home from "./views/Home";
+import About from "./views/About";
 import "./sassStyles/_main.scss";
+import styles from "./App.module.scss";
 
 function App() {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
 
   return (
-    <div className={theme}>
+    <div className={`${theme} ${styles.app}`}>
       <CustomNavbar />
       <Home />
+      <About />
       {/* <CustomTitle />
       <GenericSectionsButton text="teste" />
       {SVGs.map(({ element, text, percentage }) => (
