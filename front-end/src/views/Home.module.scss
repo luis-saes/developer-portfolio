@@ -1,0 +1,90 @@
+@import "../sassStyles/variables";
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.textAndImageWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentationWrapper {
+  font-family: "SF Pro";
+}
+
+.hello {
+  font-family: inherit;
+  font-size: 16px;
+  margin-bottom: -25px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 85px;
+}
+
+.role {
+  margin-top: -20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.image {
+  width: 500px;
+  height: auto;
+}
+
+.indicatorWrapper {
+  position: absolute;
+  bottom: 0px;
+  margin-left: 30vw;
+}
+
+.light.home {
+  background-color: $primary-light;
+}
+
+.dark.home {
+  background-color: $primary-dark;
+}
+
+.light {
+  .hello,
+  .role {
+    color: $complementar-light;
+  }
+
+  .name {
+    color: $text-light;
+  }
+}
+
+.dark {
+  .hello,
+  .role {
+    color: $complementar-dark;
+  }
+
+  .name {
+    color: $text-dark;
+  }
+}
+
+@media (max-width: 400px) {
+  .hello {
+    font-size: 16px;
+    margin-bottom: -20px;
+  }
+  .name {
+    font-size: 60px;
+  }
+  .role {
+    font-size: 18px;
+  }
+}

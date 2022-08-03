@@ -1,28 +1,23 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./context/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { ThemeContext } from "./context/ThemeContext";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
-import CustomTitle from "./components/Generics/CustomTitle";
-import GenericSectionsButton from "./components/Generics/GenericSectionsButton";
-import SkillProgress from "./components/Skills/SkillProgress";
-import PortfolioCard from "./components/Portfolio/PortfolioCard";
-import ExperienceWrapper from "./components/Experience/ExperienceWrapper";
-import SVGImportsPortfolio from "./components/Portfolio/SVGImportsPortfolio";
-import IndicatorScroll from "./components/Home/IndicatorScroll";
-import Footer from "./components/Footer/Footer";
+import Home from "./views/Home";
 import "./sassStyles/_main.scss";
 
 function App() {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
+
   return (
     <div className={theme}>
       <CustomNavbar />
-      <CustomTitle />
+      <Home />
+      {/* <CustomTitle />
       <GenericSectionsButton text="teste" />
-      {/* {SVGs.map(({ element, text, percentage }) => (
+      {SVGs.map(({ element, text, percentage }) => (
         <SkillProgress icon={element} text={text} percentage={percentage} />
-      ))} */}
+      ))}
       <ExperienceWrapper />
       <PortfolioCard
         title={t("projectTitle0")}
@@ -31,7 +26,7 @@ function App() {
         link="http://www.google.com"
       />
       <IndicatorScroll />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
