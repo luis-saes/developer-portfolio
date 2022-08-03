@@ -44,8 +44,12 @@
   "portfolioTitle": "Portfolio",
 
   "projectTitle0": "Generic Dashboard",
+  "projectTitle1": "Events Calendar",
+  "projectTitle2": "Henrique's Shoe Store",
 
-  "projectTitle1": "Placeholder",
+  "projectStack0": "React, TypeScript, Node, Express, SQLite",
+  "projectStack1": "React, Node, Express, MongoDB",
+  "projectStack2": "React, Node, Express, MySQL",
 
   "viewProject": "VIEW PROJECT",
   "viewMore": "VIEW MORE",

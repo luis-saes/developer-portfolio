@@ -5,7 +5,9 @@ import CustomNavbar from "./components/Navbar/CustomNavbar";
 import CustomTitle from "./components/Generics/CustomTitle";
 import GenericSectionsButton from "./components/Generics/GenericSectionsButton";
 import SkillProgress from "./components/Skills/SkillProgress";
+import PortfolioCard from "./components/Portfolio/PortfolioCard";
 import ExperienceWrapper from "./components/Experience/ExperienceWrapper";
+import SVGImportsPortfolio from "./components/Portfolio/SVGImportsPortfolio";
 import "./sassStyles/_main.scss";
 
 function App() {
@@ -15,11 +17,17 @@ function App() {
     <div className={theme}>
       <CustomNavbar />
       <CustomTitle />
-      <GenericSectionsButton />
+      <GenericSectionsButton text="teste" />
       {/* {SVGs.map(({ element, text, percentage }) => (
         <SkillProgress icon={element} text={text} percentage={percentage} />
       ))} */}
       <ExperienceWrapper />
+      <PortfolioCard
+        title={t("projectTitle0")}
+        Icon={SVGImportsPortfolio[0]}
+        stack={t("projectStack0")}
+        link="http://www.google.com"
+      />
     </div>
   );
 }
