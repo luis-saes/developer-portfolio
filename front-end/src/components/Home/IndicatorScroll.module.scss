@@ -1,0 +1,37 @@
+@import "../../sassStyles/variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.line {
+  border-left: 2px solid;
+  height: 240px;
+  opacity: 0.7;
+}
+
+.light {
+  .text {
+    color: $complementar-light;
+  }
+  .line {
+    color: $complementar-light;
+  }
+}
+
+.dark {
+  .text {
+    color: $complementar-dark;
+  }
+  .line {
+    color: $complementar-dark;
+  }
+}
