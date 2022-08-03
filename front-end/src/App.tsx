@@ -9,6 +9,7 @@ import PortfolioCard from "./components/Portfolio/PortfolioCard";
 import ExperienceWrapper from "./components/Experience/ExperienceWrapper";
 import SVGImportsPortfolio from "./components/Portfolio/SVGImportsPortfolio";
 import IndicatorScroll from "./components/Home/IndicatorScroll";
+import Footer from "./components/Footer/Footer";
 import "./sassStyles/_main.scss";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         link="http://www.google.com"
       />
       <IndicatorScroll />
+      <Footer />
     </div>
   );
 }
