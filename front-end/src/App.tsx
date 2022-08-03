@@ -8,6 +8,7 @@ import SkillProgress from "./components/Skills/SkillProgress";
 import PortfolioCard from "./components/Portfolio/PortfolioCard";
 import ExperienceWrapper from "./components/Experience/ExperienceWrapper";
 import SVGImportsPortfolio from "./components/Portfolio/SVGImportsPortfolio";
+import IndicatorScroll from "./components/Home/IndicatorScroll";
 import "./sassStyles/_main.scss";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         stack={t("projectStack0")}
         link="http://www.google.com"
       />
+      <IndicatorScroll />
     </div>
   );
 }
