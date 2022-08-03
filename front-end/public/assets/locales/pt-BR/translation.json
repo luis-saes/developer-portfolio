@@ -37,9 +37,13 @@
 
   "portfolioTitle": "Portfólio",
 
-  "projectTitle0": "Dashboard Generic",
+  "projectTitle0": "Dashboard genérica",
+  "projectTitle1": "Calendário de Eventos",
+  "projectTitle2": "Sapataria Henrique",
 
-  "projectTitle1": "Placeholder",
+  "projectStack0": "React, TypeScript, Node, Express, SQLite",
+  "projectStack1": "React, Node, Express, MongoDB",
+  "projectStack2": "React, Node, Express, MySQL",
 
   "viewProject": "VER PROJETO",
   "viewMore": "VER MAIS",

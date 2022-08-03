@@ -1,0 +1,82 @@
+@import "../../sassStyles/variables";
+
+.wrapper {
+  height: 260px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.wrapper.light {
+  background-color: $third-light;
+}
+
+.wrapper.dark {
+  background-color: $third-dark;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.bar {
+  width: 110px;
+  border-bottom: 2px solid;
+  margin-top: 4px;
+}
+
+.iconWrapper {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.light {
+  .title {
+    color: $text-light;
+  }
+
+  .bar {
+    border-color: $complementar-light;
+  }
+
+  .iconWrapper {
+    background-color: $card-svg-background-light;
+  }
+}
+
+.dark {
+  .title {
+    color: $text-dark;
+  }
+
+  .bar {
+    border-color: $complementar-dark;
+  }
+
+  .iconWrapper {
+    background-color: $card-svg-background-dark;
+  }
+}
+
+.stack {
+  margin: 0px 5px;
+  text-align: center;
+}
