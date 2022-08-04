@@ -5,6 +5,7 @@ import styles from "./ExperienceCard.module.scss";
 type PrivateProps = {
   title: string[];
   company: string[];
+  links: string[];
   startTime: string[];
   endTime: string[];
   topics: string[][];
@@ -19,11 +20,16 @@ const ExperienceCard = (props: PrivateProps) => {
       className={`py-3 px-5 ${styles[theme]} ${styles.experienceCardWrapper}`}
     >
       <div className={styles.roleAndCompany}>
-        <div className={styles.role}>{`${
-          props.title[props.currentActive]
-        } - `}</div>
-        <div className={styles.company}>
-          {props.company[props.currentActive]}
+        <div className={styles.role}>
+          {props.title[props.currentActive]} -
+          <a
+            className={styles.company}
+            href={props.links[props.currentActive]}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {props.company[props.currentActive]}
+          </a>
         </div>
       </div>
       <div className={styles.timeInterval}>{`${

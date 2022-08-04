@@ -64,3 +64,9 @@
 .dark .bar > div {
   background-color: $complementar-dark !important;
 }
+
+@media (max-width: 390px) {
+  .skillProgressWrapper {
+    width: 300px;
+  }
+}
