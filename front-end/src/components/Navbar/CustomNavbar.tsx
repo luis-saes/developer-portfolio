@@ -83,7 +83,11 @@ const CustomNavbar = () => {
           <Nav className={styles.nav}>
             {genericButtons.map(({ section, text }) => {
               return (
-                <Nav.Link key={section} onClick={() => setExpanded(false)}>
+                <Nav.Link
+                  key={section}
+                  onClick={() => setExpanded(false)}
+                  className={styles.navLink}
+                >
                   <GenericButton text={text} />
                 </Nav.Link>
               );

@@ -43,3 +43,9 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-height: 410px) {
+  .navLink {
+    padding: 2px 0;
+  }
+}

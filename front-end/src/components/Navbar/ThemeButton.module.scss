@@ -14,3 +14,15 @@
   transition: 200ms;
   position: relative;
 }
+
+@media (max-height: 620px) {
+  .themeButton {
+    margin-top: 0px;
+  }
+}
+
+@media (max-height: 410px) {
+  .themeButton {
+    padding-bottom: 5px;
+  }
+}
