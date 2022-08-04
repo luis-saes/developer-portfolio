@@ -1,0 +1,66 @@
+{
+  "language": "LANGUAGE",
+  "english": "ENGLISH",
+  "portuguese": "PORTUGUESE",
+  "home": "HOME",
+  "about": "ABOUT",
+  "skills": "SKILLS",
+  "work": "WORK",
+  "portfolio": "PORTFOLIO",
+  "contact": "CONTACT",
+  "resume": "RESUME",
+
+  "hello": "Hello there 👋, my name is",
+  "role": "Full Stack Developer",
+  "whoIAm": "Who I am",
+  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
+  "mySkills": "My Skills",
+  "tools": "Tools",
+  "other": "Other",
+  "experience": "Experience",
+
+  "role0": "Information Engineering Intern",
+  "company0": "Embraer",
+  "startTime0": "Apr. 2021",
+  "endTime0": "Apr. 2022",
+  "topics0": [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
+    "Aenean vitae est tristique, finibus nunc sed, semper libero. Cras eu feugiat tortor. Nam ac ipsum at turpis pretium tristique.",
+    "Praesent pulvinar congue aliquam. Praesent non arcu tincidunt, feugiat risus vel, vehicula massa. Integer neque enim, tempor finibus erat quis, varius placerat neque. Integer sit amet ligula erat. Proin commodo non nisl nec ullamcorper."
+  ],
+
+  "role1": "Placeholder",
+  "company1": "Placeholder",
+  "startTime1": "Placeholder",
+  "endTime1": "Placeholder",
+  "topics1": ["Placeholder", "Placeholder", "Placeholder"],
+
+  "role2": "Placeholder",
+  "company2": "Placeholder",
+  "startTime2": "Placeholder",
+  "endTime2": "Placeholder",
+  "topics2": ["Placeholder", "Placeholder", "Placeholder"],
+
+  "portfolioTitle": "Portfolio",
+
+  "projectTitle0": "Generic Dashboard",
+  "projectTitle1": "Events Calendar",
+  "projectTitle2": "Henrique's Shoe Store",
+  "projectTitle3": "HHS Electric Company",
+  "projectTitle4": "Bridges Company",
+  "projectTitle5": "Coming Soon",
+
+  "projectStack0": "React, TypeScript, Node, Express, SQLite",
+  "projectStack1": "React, Node, Express, MongoDB",
+  "projectStack2": "React, Node, Express, MySQL",
+  "projectStack3": "Vue, Sass",
+  "projectStack4": "Vue, Sass",
+  "projectStack5": "React, Go, MongoDB",
+
+  "viewProject": "VIEW PROJECT",
+  "viewMore": "VIEW MORE",
+  "viewLess": "VIEW LESS",
+  "sendMessageTitle": "Send me a message!",
+  "sendMessageText": "Want to ask a question, chat with me, or just say hello?",
+  "getInTouch": "SEND MAIL"
+}
