@@ -30,7 +30,7 @@ i18n
     },
     fallbackLng: "en",
     backend: {
-      loadPath: "./assets/locales/{{lng}}/translation.json",
+      loadPath: "/assets/locales/{{lng}}/translation.json",
     },
   });
 
