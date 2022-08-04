@@ -13,12 +13,24 @@ import { ReactComponent as LogoDark } from "../../assets/svg/navbar-dark.svg";
 import { ReactComponent as LogoLight } from "../../assets/svg/navbar-light.svg";
 import styles from "./CustomNavbar.module.scss";
 
-const CustomNavbar = () => {
+type PrivateProps = {
+  refs: any[];
+};
+
+const CustomNavbar = (props: PrivateProps) => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
   const [expanded, setExpanded] = useState<any>(false);
 
   const { width } = useWindowDimensions();
+
+  const onClickLink = (index: number) => {
+    setExpanded(false);
+    window.scrollTo({
+      top: props.refs[index].current?.offsetTop - 80,
+      behavior: "smooth",
+    });
+  };
 
   const genericButtons = [
     {
@@ -82,11 +94,11 @@ const CustomNavbar = () => {
           className={`${width < 1400 ? styles.navExpanded : styles.nav}`}
         >
           <Nav className={styles.nav}>
-            {genericButtons.map(({ section, text }) => {
+            {genericButtons.map(({ section, text }, index: number) => {
               return (
                 <Nav.Link
                   key={section}
-                  onClick={() => setExpanded(false)}
+                  onClick={() => onClickLink(index)}
                   className={styles.navLink}
                 >
                   <GenericButton text={text} />
