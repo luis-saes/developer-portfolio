@@ -7,6 +7,7 @@
   border-radius: 5px;
   height: 28px;
   padding: 6px 10px;
+  width: 120px;
 
   display: flex;
   align-items: center;
@@ -30,7 +31,7 @@
 }
 
 .button:hover {
-  color: #fff;
+  color: $text-dark;
 }
 
 .light.button:hover {
@@ -38,6 +39,18 @@
 }
 
 .dark.button:hover {
+  background-color: $complementar-dark;
+}
+
+.light.active {
+  background-color: $complementar-light;
+}
+
+.light.active.button {
+  color: $text-dark;
+}
+
+.dark.active {
   background-color: $complementar-dark;
 }
 

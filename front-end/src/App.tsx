@@ -4,6 +4,9 @@ import { ThemeContext } from "./context/ThemeContext";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import Home from "./views/Home";
 import About from "./views/About";
+import Skills from "./views/Skills";
+
+import Footer from "./components/Footer/Footer";
 import "./sassStyles/_main.scss";
 import styles from "./App.module.scss";
 
@@ -16,6 +19,7 @@ function App() {
       <CustomNavbar />
       <Home />
       <About />
+      <Skills />
       {/* <CustomTitle />
       <GenericSectionsButton text="teste" />
       {SVGs.map(({ element, text, percentage }) => (
@@ -28,8 +32,8 @@ function App() {
         stack={t("projectStack0")}
         link="http://www.google.com"
       />
-      <IndicatorScroll />
-      <Footer /> */}
+      <IndicatorScroll />*/}
+      <Footer />
     </div>
   );
 }
