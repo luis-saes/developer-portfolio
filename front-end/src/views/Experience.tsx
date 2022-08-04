@@ -61,7 +61,7 @@ const Experience = () => {
             currentActiveIndex={currentActive}
           />
         )}
-        <div className={styles.cardWrapper}>
+        <div className={`${styles.cardWrapper} mb-5`}>
           <ExperienceCard
             key={titles[currentActive]}
             title={titles}

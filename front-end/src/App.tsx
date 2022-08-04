@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "./context/ThemeContext";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
@@ -17,15 +17,36 @@ function App() {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
 
+  const home = useRef<any>();
+  const about = useRef<any>();
+  const skills = useRef<any>();
+  const experience = useRef<any>();
+  const portfolio = useRef<any>();
+  const contact = useRef<any>();
+
   return (
     <div className={`${theme} ${styles.app}`}>
-      <CustomNavbar />
-      <Home />
-      <About />
-      <Skills />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <CustomNavbar
+        refs={[home, about, skills, experience, portfolio, contact]}
+      />
+      <div ref={home}>
+        <Home />
+      </div>
+      <div ref={about}>
+        <About />
+      </div>
+      <div ref={skills}>
+        <Skills />
+      </div>
+      <div ref={experience}>
+        <Experience />
+      </div>
+      <div ref={portfolio}>
+        <Portfolio />
+      </div>
+      <div ref={contact}>
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
