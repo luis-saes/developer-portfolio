@@ -15,6 +15,12 @@ type PrivateProps = {
 const ExperienceCard = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
+  console.log(props.topics, props.currentActive);
+
+  const topics0 = props.topics[0];
+  const topics1 = props.topics[1];
+  const topics2 = props.topics[2];
+
   return (
     <div
       className={`py-3 px-5 ${styles[theme]} ${styles.experienceCardWrapper}`}
@@ -36,7 +42,7 @@ const ExperienceCard = (props: PrivateProps) => {
         props.startTime[props.currentActive]
       } - ${props.endTime[props.currentActive]}`}</div>
       <ul>
-        {props.topics[props.currentActive].map((val, index) => (
+        {topics0.map((val, index) => (
           <li className={styles.topics} key={`${props.currentActive}${index}`}>
             {val}
           </li>
