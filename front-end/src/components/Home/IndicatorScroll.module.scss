@@ -35,3 +35,22 @@
     color: $complementar-dark;
   }
 }
+
+@media (max-width: 400px) {
+  .line {
+    height: 100px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px) and (min-height: 401px) {
+  .line {
+    height: 30px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-height: 400px) {
+  .line,
+  .text {
+    display: none;
+  }
+}
