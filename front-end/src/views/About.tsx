@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../context/ThemeContext";
-import useWindowDimensions from "../utils/WindowDimensions";
 import BackgroundTop from "../components/About/BackgroundTop";
 import BackgroundBottom from "../components/About/BackgroundBottom";
 import CustomTitle from "../components/Generics/CustomTitle";
@@ -11,16 +10,6 @@ import styles from "./About.module.scss";
 const About = () => {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
-
-  const [expanded, setExpanded] = useState<boolean>(false);
-  const [navbarHeight, setNavbarHeight] = useState<number>(86);
-
-  const { height, width } = useWindowDimensions();
-
-  useEffect(() => {
-    setExpanded(width > 1399);
-    setNavbarHeight(width > 1399 ? 86 : 70);
-  }, [height, width]);
 
   return (
     <div className={`${styles[theme]} ${styles.main}`}>
