@@ -12,13 +12,15 @@ const ExperienceWrapper = () => {
   const [currentActive, setCurrentActive] = useState<number>(0);
   let titles: string[] = [];
   let companies: string[] = [];
+  let links: string[] = [];
   let startTimes: string[] = [];
   let endTimes: string[] = [];
   let topicsMatrix: string[][] = [];
 
-  SVGsCompanies.forEach((_, index: number) => {
+  SVGsCompanies.forEach((el, index: number) => {
     titles = [...titles, t(`role${index}`)];
     companies = [...companies, t(`company${index}`)];
+    links = [...links, el.link];
     startTimes = [...startTimes, t(`startTime${index}`)];
     endTimes = [...endTimes, t(`endTime${index}`)];
     topicsMatrix = [
@@ -53,6 +55,7 @@ const ExperienceWrapper = () => {
         <ExperienceCard
           title={titles}
           company={companies}
+          links={links}
           startTime={startTimes}
           endTime={endTimes}
           topics={topicsMatrix}

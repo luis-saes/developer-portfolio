@@ -39,3 +39,33 @@
 .topics {
   font-size: 16px;
 }
+
+@media (max-width: 790px) and (min-width: 621px) {
+  .experienceCardWrapper {
+    width: 600px;
+  }
+}
+
+@media (max-width: 620px) and (min-width: 451px) {
+  .experienceCardWrapper {
+    width: 430px;
+  }
+  .roleAndCompany {
+    font-size: 16px;
+  }
+  .topics {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .experienceCardWrapper {
+    width: 300px;
+  }
+  .roleAndCompany {
+    font-size: 16px;
+  }
+  .topics {
+    font-size: 14px;
+  }
+}
