@@ -8,14 +8,14 @@ type PrivateProps = {
   links: string[];
   startTime: string[];
   endTime: string[];
-  topics: string[][];
+  // topics: string[][];
   currentActive: number;
 };
 
 const ExperienceCard = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
-  console.log(props.topics, props.currentActive);
+  // console.log(props.topics, props.currentActive);
 
   const topics0 = [
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
