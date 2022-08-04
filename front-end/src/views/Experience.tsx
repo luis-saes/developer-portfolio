@@ -20,7 +20,7 @@ const Experience = () => {
   let links: string[] = [];
   let startTimes: string[] = [];
   let endTimes: string[] = [];
-  // let topicsMatrix: string[][] = [];
+  let topicsMatrix: string[][] = [];
 
   SVGsCompanies.forEach((el, index: number) => {
     titles = [...titles, t(`role${index}`)];
@@ -28,10 +28,10 @@ const Experience = () => {
     links = [...links, el.link];
     startTimes = [...startTimes, t(`startTime${index}`)];
     endTimes = [...endTimes, t(`endTime${index}`)];
-    // topicsMatrix = [
-    //   ...topicsMatrix,
-    //   t(`topics${index}`, { returnObjects: true }),
-    // ];
+    topicsMatrix = [
+      ...topicsMatrix,
+      t(`topics${index}`, { returnObjects: true }),
+    ];
   });
 
   const companyChangeHandler = (index: number) => {
@@ -69,7 +69,7 @@ const Experience = () => {
             links={links}
             startTime={startTimes}
             endTime={endTimes}
-            // topics={topicsMatrix}
+            topics={topicsMatrix}
             currentActive={changeCompany}
           />
         </div>
