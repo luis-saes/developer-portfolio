@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/developer-portfolio/static/css/main.6c838cd9.css",
-    "main.js": "/developer-portfolio/static/js/main.05ee0f40.js",
+    "main.css": "/developer-portfolio/static/css/main.10593cdc.css",
+    "main.js": "/developer-portfolio/static/js/main.832ca550.js",
     "static/media/3d-cropped.png": "/developer-portfolio/static/media/3d-cropped.41c2463b6f5af2a352c9.png",
     "static/media/questrial-regular.ttf": "/developer-portfolio/static/media/questrial-regular.8268e81790f4302669b7.ttf",
     "static/media/sf-pro-text-regular.ttf": "/developer-portfolio/static/media/sf-pro-text-regular.6c476e49e88b29f603fb.ttf",
@@ -15,9 +15,7 @@
     "static/media/shoe-shop.svg": "/developer-portfolio/static/media/shoe-shop.26ad5c402d0d1e33b306bb4ef868655b.svg",
     "static/media/mongodb.svg": "/developer-portfolio/static/media/mongodb.be31dfdbbba4991afe47ef68c8bab9b9.svg",
     "static/media/comp.svg": "/developer-portfolio/static/media/comp.becbc32e0ec46b83a6a8e29d7b56ba69.svg",
-    "static/media/footer-light.svg": "/developer-portfolio/static/media/footer-light.ed318358ad07e0abf57eaf0c2fa64f75.svg",
     "static/media/navbar-dark.svg": "/developer-portfolio/static/media/navbar-dark.e887d259965c93888a7aa36e149c1005.svg",
-    "static/media/footer-dark.svg": "/developer-portfolio/static/media/footer-dark.8ffa7b1059d713e3e4e8ef2deb5c3761.svg",
     "static/media/navbar-light.svg": "/developer-portfolio/static/media/navbar-light.7596238aaba703c59c9ac2658a65fe0c.svg",
     "static/media/go.svg": "/developer-portfolio/static/media/go.d636acb1f69b75402db31fb54ed6ee2d.svg",
     "static/media/vb-dotnet.svg": "/developer-portfolio/static/media/vb-dotnet.4bbeed52c5c164412fce072f8243c909.svg",
@@ -44,11 +42,11 @@
     "static/media/getFetch.cjs": "/developer-portfolio/static/media/getFetch.c780682470504fffbd04.cjs",
     "static/media/embraer.svg": "/developer-portfolio/static/media/embraer.74b287718cd289b01c28dfbf2505671e.svg",
     "static/media/vue.svg": "/developer-portfolio/static/media/vue.2554c94816790883531e6544389d323c.svg",
-    "main.6c838cd9.css.map": "/developer-portfolio/static/css/main.6c838cd9.css.map",
-    "main.05ee0f40.js.map": "/developer-portfolio/static/js/main.05ee0f40.js.map"
+    "main.10593cdc.css.map": "/developer-portfolio/static/css/main.10593cdc.css.map",
+    "main.832ca550.js.map": "/developer-portfolio/static/js/main.832ca550.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c838cd9.css",
-    "static/js/main.05ee0f40.js"
+    "static/css/main.10593cdc.css",
+    "static/js/main.832ca550.js"
   ]
 }
