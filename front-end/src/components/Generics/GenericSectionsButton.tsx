@@ -7,6 +7,7 @@ type PrivateProps = {
   index?: number;
   active?: boolean;
   click?: (index: number) => void;
+  skills?: boolean;
 };
 
 const GenericSectionsButton = (props: PrivateProps) => {
@@ -17,7 +18,7 @@ const GenericSectionsButton = (props: PrivateProps) => {
     <button
       className={`${styles.button} ${styles[theme]} ${
         props.active ? styles.active : ""
-      }`}
+      } ${props.skills ? styles.skills : null}`}
       onClick={() => props.click?.(mIndex)}
     >
       {props.text}
