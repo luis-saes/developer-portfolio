@@ -18,7 +18,7 @@ const CustomNavbar = () => {
   const { theme } = useContext(ThemeContext);
   const [expanded, setExpanded] = useState<any>(false);
 
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const genericButtons = [
     {
