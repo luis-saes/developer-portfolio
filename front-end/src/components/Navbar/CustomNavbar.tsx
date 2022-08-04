@@ -9,7 +9,8 @@ import LanguageButton from "./LanguageButton";
 import ResumeButton from "./ResumeButton";
 import ThemeButton from "./ThemeButton";
 import useWindowDimensions from "../../utils/WindowDimensions";
-import { ReactComponent as LogoDark } from "../../assets/svg/logo-dark.svg";
+import { ReactComponent as LogoDark } from "../../assets/svg/navbar-dark.svg";
+import { ReactComponent as LogoLight } from "../../assets/svg/navbar-light.svg";
 import styles from "./CustomNavbar.module.scss";
 
 const CustomNavbar = () => {
@@ -55,7 +56,7 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <LogoDark />
+          {theme === "light" ? <LogoLight /> : <LogoDark />}
         </Navbar.Brand>
         <LanguageButton />
         <Navbar.Toggle

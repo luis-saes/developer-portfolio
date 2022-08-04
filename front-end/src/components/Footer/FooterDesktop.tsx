@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { ReactComponent as Logo } from "../../assets/svg/logo-dark.svg";
+import { ReactComponent as LogoLight } from "../../assets/svg/footer-light.svg";
+import { ReactComponent as LogoDark } from "../../assets/svg/footer-dark.svg";
 import { ReactComponent as Linkedin } from "../../assets/svg/socialMedia/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/svg/socialMedia/github.svg";
 import { ReactComponent as Medium } from "../../assets/svg/socialMedia/medium.svg";
@@ -11,7 +12,7 @@ const FooterDesktop = () => {
 
   return (
     <div className={`${styles[theme]} ${styles.wrapper}`}>
-      <Logo className={styles.logo} />
+      {theme === "light" ? <LogoLight /> : <LogoDark />}
       <div className={styles.text}>© 2022 Luis Henrique Saes Scandelai</div>
       <div className={styles.iconsWrapper}>
         <a
