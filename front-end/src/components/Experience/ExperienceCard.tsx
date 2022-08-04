@@ -17,9 +17,11 @@ const ExperienceCard = (props: PrivateProps) => {
 
   console.log(props.topics, props.currentActive);
 
-  const topics0 = props.topics[0];
-  const topics1 = props.topics[1];
-  const topics2 = props.topics[2];
+  const topics0 = [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
+    "Aenean vitae est tristique, finibus nunc sed, semper libero. Cras eu feugiat tortor. Nam ac ipsum at turpis pretium tristique.",
+    "Praesent pulvinar congue aliquam. Praesent non arcu tincidunt, feugiat risus vel, vehicula massa. Integer neque enim, tempor finibus erat quis, varius placerat neque. Integer sit amet ligula erat. Proin commodo non nisl nec ullamcorper.",
+  ];
 
   return (
     <div
