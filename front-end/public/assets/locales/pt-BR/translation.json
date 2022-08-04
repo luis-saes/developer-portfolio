@@ -40,13 +40,20 @@
   "projectTitle0": "Dashboard genérica",
   "projectTitle1": "Calendário de Eventos",
   "projectTitle2": "Sapataria Henrique",
+  "projectTitle3": "HHS Elétrica",
+  "projectTitle4": "ConstruPontes",
+  "projectTitle5": "Em Breve",
 
   "projectStack0": "React, TypeScript, Node, Express, SQLite",
   "projectStack1": "React, Node, Express, MongoDB",
   "projectStack2": "React, Node, Express, MySQL",
+  "projectStack3": "Vue, Sass",
+  "projectStack4": "Vue, Sass",
+  "projectStack5": "React, Go, MongoDB",
 
   "viewProject": "VER PROJETO",
   "viewMore": "VER MAIS",
+  "viewLess": "VER MENOS",
   "sendMessageTitle": "Me envie uma mensagem!",
   "sendMessageText": "Deseja perguntar algo, conversar, ou dizer um oi?",
   "getInTouch": "ENTRE EM CONTATO"
