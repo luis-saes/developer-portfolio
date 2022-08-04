@@ -13,7 +13,7 @@
   "hello": "Hello there 👋, my name is",
   "role": "Full Stack Developer",
   "whoIAm": "Who I am",
-  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
+  "whoIAmText": "I am an extremely motivated computer science student with strong verbal, written and communication skills. Passionate about cutting edge technologies and their development logic. I am interested in positions focused on software engineering and development.\n\nI have already developed static and dynamic web applications, participated in several commercial projects, e-commerce applications, using web scraping and creating and maintaining databases. I helped to merge the databases of a tool used by two multinational companies in a period of 6 months.",
   "mySkills": "My Skills",
   "tools": "Tools",
   "other": "Other",
@@ -24,22 +24,30 @@
   "startTime0": "Apr. 2021",
   "endTime0": "Apr. 2022",
   "topics0": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
-    "Aenean vitae est tristique, finibus nunc sed, semper libero. Cras eu feugiat tortor. Nam ac ipsum at turpis pretium tristique.",
-    "Praesent pulvinar congue aliquam. Praesent non arcu tincidunt, feugiat risus vel, vehicula massa. Integer neque enim, tempor finibus erat quis, varius placerat neque. Integer sit amet ligula erat. Proin commodo non nisl nec ullamcorper."
+    "Internal software conception and development.",
+    "Maintenance, updating and merge of different databases.",
+    "Refactoring of internal tools."
   ],
 
-  "role1": "Placeholder",
-  "company1": "Placeholder",
-  "startTime1": "Placeholder",
-  "endTime1": "Placeholder",
-  "topics1": ["Placeholder", "Placeholder", "Placeholder"],
+  "role1": "Full Stack Developer",
+  "company1": "Comp Junior",
+  "startTime1": "Nov. 2020",
+  "endTime1": "Jul. 2022",
+  "topics1": [
+    "Creation of dynamic and interactive dashboards using MVC pattern and update of databases",
+    "Development of static and dynamic websites, using the state-of-the-art web technologies",
+    "Backlog construction and maintenance and management of scrum meetings"
+  ],
 
-  "role2": "Placeholder",
-  "company2": "Placeholder",
-  "startTime2": "Placeholder",
-  "endTime2": "Placeholder",
-  "topics2": ["Placeholder", "Placeholder", "Placeholder"],
+  "role2": "Software Quality Assurance Analyst",
+  "company2": "Global Technologies",
+  "startTime2": "Feb. 2021",
+  "endTime2": "Apr. 2021",
+  "topics2": [
+    "Maintenance of software quality standards through scrum",
+    "Protocol standardization",
+    "Creation of documentation to maintain the development team's backlog"
+  ],
 
   "portfolioTitle": "Portfolio",
 

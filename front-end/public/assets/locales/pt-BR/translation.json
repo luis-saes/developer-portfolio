@@ -13,7 +13,7 @@
   "hello": "Olá 👋, me chamo",
   "role": "Desenvolvedor Full Stack",
   "whoIAm": "Sobre mim",
-  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
+  "whoIAmText": "Eu sou um estudante de Ciência da Computação extremamente motivado com fortes habilidades verbais, escritas e de comunicação. Apaixonado por tecnologias de ponta e sua lógica de desenvolvimento. Me interesso por posições focadas na engenharia de software e de desenvolvimento.\n\nJá desenvolvi aplicações web estáticas e dinâmicas, participei de diversos projetos comerciais, aplicações de e-commerce, utilização de web scraping e criação e manutenção de bases de dados. Auxiliei na junção das bases de dados de uma ferramenta utilizada por duas empresas multinacionais no período de 6 meses.",
   "mySkills": "Minhas Habilidades",
   "tools": "Ferramentas",
   "other": "Outros",
@@ -24,16 +24,30 @@
   "startTime0": "Abr. 2021",
   "endTime0": "Abr. 2022",
   "topics0": [
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
-    "Aenean vitae est tristique, finibus nunc sed, semper libero. Cras eu feugiat tortor. Nam ac ipsum at turpis pretium tristique.",
-    "Praesent pulvinar congue aliquam. Praesent non arcu tincidunt, feugiat risus vel, vehicula massa. Integer neque enim, tempor finibus erat quis, varius placerat neque. Integer sit amet ligula erat. Proin commodo non nisl nec ullamcorper."
+    "Concepção e desenvolvimento de softwares internos.",
+    "Manutenção, atualização e merge de diferentes bancos de dados.",
+    "Refatoração das ferramentas internas."
   ],
 
-  "role1": "Placeholder",
-  "company1": "Placeholder",
-  "startTime1": "Placeholder",
-  "endTime1": "Placeholder",
-  "topics1": ["Placeholder", "Placeholder", "Placeholder"],
+  "role1": "Desenvolvedor Full Stack",
+  "company1": "Comp Júnior",
+  "startTime1": "Nov. 2020",
+  "endTime1": "Jul. 2022",
+  "topics1": [
+    "Criação de dashboards dinâmicos e interativos utilizando padrão MVC e atualização de bancos de dados.",
+    "Desenvolvimento de websites estáticos e dinâmicos, utilizando as mais modernas tecnologias web.",
+    "Construção e manutenção de backlog e gerenciamento de reuniões de scrum."
+  ],
+
+  "role2": "Analista de Garantia de Qualidade de Software",
+  "company2": "Global Technologies",
+  "startTime2": "Fev. 2021",
+  "endTime2": "Abr. 2021",
+  "topics2": [
+    "Manutenção dos padrões de qualidade de software através do scrum.",
+    "Padronização de protocolos.",
+    "Criação de documentação para manutenção do backlog do time de desenvolvimento."
+  ],
 
   "portfolioTitle": "Portfólio",
 
