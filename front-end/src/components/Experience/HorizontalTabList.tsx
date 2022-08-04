@@ -12,6 +12,8 @@ type PrivateProps = {
 const VerticalTabList = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
+  console.log(typeof props.companies);
+
   const changeIndexAndCallFather = (index: number) => {
     props.setCurrentActiveIndex(index);
     props.changeCompany(index);

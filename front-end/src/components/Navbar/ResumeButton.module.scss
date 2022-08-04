@@ -41,3 +41,9 @@
 .collapsed {
   margin: 7px 0px;
 }
+
+@media (max-height: 410px) {
+  .collapsed {
+    margin: 2px 0;
+  }
+}

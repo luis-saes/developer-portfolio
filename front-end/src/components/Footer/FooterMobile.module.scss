@@ -45,3 +45,15 @@ path {
 .dark .icon:hover path {
   fill: $complementar-dark;
 }
+
+@media (max-height: 750px) and (min-height: 501px) {
+  .wrapper {
+    height: 15vh;
+  }
+}
+
+@media (max-height: 500px) {
+  .wrapper {
+    height: 25vh;
+  }
+}

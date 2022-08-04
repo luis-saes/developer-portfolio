@@ -9,7 +9,8 @@ import LanguageButton from "./LanguageButton";
 import ResumeButton from "./ResumeButton";
 import ThemeButton from "./ThemeButton";
 import useWindowDimensions from "../../utils/WindowDimensions";
-import { ReactComponent as LogoDark } from "../../assets/svg/logo-dark.svg";
+import { ReactComponent as LogoDark } from "../../assets/svg/navbar-dark.svg";
+import { ReactComponent as LogoLight } from "../../assets/svg/navbar-light.svg";
 import styles from "./CustomNavbar.module.scss";
 
 const CustomNavbar = () => {
@@ -55,7 +56,7 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <LogoDark />
+          {theme === "light" ? <LogoLight /> : <LogoDark />}
         </Navbar.Brand>
         <LanguageButton />
         <Navbar.Toggle
@@ -71,7 +72,7 @@ const CustomNavbar = () => {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             />
           </svg>
@@ -83,7 +84,11 @@ const CustomNavbar = () => {
           <Nav className={styles.nav}>
             {genericButtons.map(({ section, text }) => {
               return (
-                <Nav.Link key={section} onClick={() => setExpanded(false)}>
+                <Nav.Link
+                  key={section}
+                  onClick={() => setExpanded(false)}
+                  className={styles.navLink}
+                >
                   <GenericButton text={text} />
                 </Nav.Link>
               );

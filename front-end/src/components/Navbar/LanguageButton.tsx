@@ -22,19 +22,30 @@ const LanguageButton = () => {
 
   const currentLanguageCode = Cookies.get("i18next") || "en";
 
+  const filterLanguages = (el: any) => {
+    return el.code === currentLanguageCode;
+  };
+
+  const changeLanguage = (event: any) => {
+    i18next.changeLanguage(event.target.value);
+  };
+
+  const mDefaultValue = languages.filter(filterLanguages);
+
   return (
     <select
       name="languages"
       id="languages"
       className={`${styles[theme]} ${styles.select}`}
+      defaultValue={mDefaultValue[0].code}
+      onClick={changeLanguage}
     >
       {languages.map(({ code, name }) => {
         return (
           <option
             key={code}
-            onClick={() => i18next.changeLanguage(code)}
             disabled={code === currentLanguageCode}
-            selected={code === currentLanguageCode}
+            value={code}
           >
             {name}
           </option>
