@@ -46,13 +46,20 @@
   "projectTitle0": "Generic Dashboard",
   "projectTitle1": "Events Calendar",
   "projectTitle2": "Henrique's Shoe Store",
+  "projectTitle3": "HHS Electric Company",
+  "projectTitle4": "Bridges Company",
+  "projectTitle5": "Coming Soon",
 
   "projectStack0": "React, TypeScript, Node, Express, SQLite",
   "projectStack1": "React, Node, Express, MongoDB",
   "projectStack2": "React, Node, Express, MySQL",
+  "projectStack3": "Vue, Sass",
+  "projectStack4": "Vue, Sass",
+  "projectStack5": "React, Go, MongoDB",
 
   "viewProject": "VIEW PROJECT",
   "viewMore": "VIEW MORE",
+  "viewLess": "VIEW LESS",
   "sendMessageTitle": "Send me a message!",
   "sendMessageText": "Want to ask a question, chat with me, or just say hello?",
   "getInTouch": "GET IN TOUCH"

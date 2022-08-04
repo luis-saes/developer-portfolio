@@ -15,7 +15,7 @@ import styles from "./CustomNavbar.module.scss";
 const CustomNavbar = () => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState<any>(false);
 
   const { height, width } = useWindowDimensions();
 
@@ -50,8 +50,8 @@ const CustomNavbar = () => {
     <Navbar
       expand="xxl"
       fixed="top"
-      onToggle={(boolean) => setExpanded(boolean)}
       className={`${styles[theme]} ${styles.main}`}
+      expanded={expanded}
     >
       <Container>
         <Navbar.Brand href="#home">
@@ -61,6 +61,7 @@ const CustomNavbar = () => {
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className={styles.toggle}
+          onClick={() => setExpanded(expanded ? false : "expanded")}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,15 +83,18 @@ const CustomNavbar = () => {
           <Nav className={styles.nav}>
             {genericButtons.map(({ section, text }) => {
               return (
-                <Nav.Link key={section}>
+                <Nav.Link key={section} onClick={() => setExpanded(false)}>
                   <GenericButton text={text} />
                 </Nav.Link>
               );
             })}
-            <Nav.Item>
+            <Nav.Item onClick={() => setExpanded(false)}>
               <ResumeButton text={t("resume")} expanded={width > 1399} />
             </Nav.Item>
-            <Nav.Item className="border-left pl-2 ml-auto">
+            <Nav.Item
+              className="border-left pl-2 ml-auto"
+              onClick={() => setExpanded(false)}
+            >
               <ThemeButton expanded={width > 1399} />
             </Nav.Item>
           </Nav>

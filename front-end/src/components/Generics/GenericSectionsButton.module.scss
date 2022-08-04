@@ -7,7 +7,7 @@
   border-radius: 5px;
   height: 28px;
   padding: 6px 10px;
-  width: 120px;
+  width: 140px;
 
   display: flex;
   align-items: center;
@@ -61,5 +61,6 @@
 @media (max-width: 380px) {
   .button {
     width: 100px;
+    font-size: 10px;
   }
 }

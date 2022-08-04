@@ -41,7 +41,7 @@ const Skills = () => {
       <div className={styles.skillCardWrapper}>
         {/* TODO: change filter and map to reduce */}
         {SVGs.filter(filterByCategory).map((el) => (
-          <div className={styles.skillCard}>
+          <div className={styles.skillCard} key={el.text}>
             <SkillProgress
               key={el.text}
               icon={el.element}
