@@ -26,19 +26,6 @@ function App() {
       <Experience />
       <Portfolio />
       <Contact />
-      {/* <CustomTitle />
-      <GenericSectionsButton text="teste" />
-      {SVGs.map(({ element, text, percentage }) => (
-        <SkillProgress icon={element} text={text} percentage={percentage} />
-      ))}
-      <ExperienceWrapper />
-      <PortfolioCard
-        title={t("projectTitle0")}
-        Icon={SVGImportsPortfolio[0]}
-        stack={t("projectStack0")}
-        link="http://www.google.com"
-      />
-      <IndicatorScroll />*/}
       <Footer />
     </div>
   );
