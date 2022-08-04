@@ -1,7 +1,6 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import useWindowDimensions from "../utils/WindowDimensions";
-import { ThemeContext } from "../context/ThemeContext";
 import CustomTitle from "../components/Generics/CustomTitle";
 import SVGsCompanies from "../components/Experience/SvgImports";
 import HorizontalTabList from "../components/Experience/HorizontalTabList";
@@ -11,7 +10,7 @@ import styles from "./Experience.module.scss";
 
 const Experience = () => {
   const { t } = useTranslation();
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   const [changeCompany, setChangeCompany] = useState<number>(0);
   const [currentActive, setCurrentActive] = useState<number>(0);
