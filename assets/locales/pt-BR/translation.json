@@ -1,0 +1,60 @@
+{
+  "language": "LINGUAGEM",
+  "english": "INGLÊS",
+  "portuguese": "PORTUGUÊS",
+  "home": "HOME",
+  "about": "SOBRE",
+  "skills": "HABILIDADES",
+  "work": "EXPERIÊNCIA",
+  "portfolio": "PORTFÓLIO",
+  "contact": "CONTATO",
+  "resume": "CURRÍCULO",
+
+  "hello": "Olá 👋, me chamo",
+  "role": "Desenvolvedor Full Stack",
+  "whoIAm": "Sobre mim",
+  "whoIAmText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere eros at tempus fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.\n\nSed ultrices laoreet venenatis. Maecenas mollis, erat quis ultrices molestie, ante odio scelerisque nulla, nec lacinia velit lorem tincidunt est. Proin volutpat suscipit lorem. Cras blandit neque et nunc mollis, quis venenatis lacus volutpat. Quisque in elit ut orci efficitur varius at a eros.",
+  "mySkills": "Minhas Habilidades",
+  "tools": "Ferramentas",
+  "other": "Outros",
+  "experience": "Experiência",
+
+  "role0": "Estagiário de Engenharia da Informação",
+  "company0": "Embraer",
+  "startTime0": "Abr. 2021",
+  "endTime0": "Abr. 2022",
+  "topics0": [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu neque dignissim, mattis libero et, facilisis ipsum. In bibendum, magna ut facilisis iaculis, ipsum erat ullamcorper nibh, sed dapibus sem augue molestie neque.",
+    "Aenean vitae est tristique, finibus nunc sed, semper libero. Cras eu feugiat tortor. Nam ac ipsum at turpis pretium tristique.",
+    "Praesent pulvinar congue aliquam. Praesent non arcu tincidunt, feugiat risus vel, vehicula massa. Integer neque enim, tempor finibus erat quis, varius placerat neque. Integer sit amet ligula erat. Proin commodo non nisl nec ullamcorper."
+  ],
+
+  "role1": "Placeholder",
+  "company1": "Placeholder",
+  "startTime1": "Placeholder",
+  "endTime1": "Placeholder",
+  "topics1": ["Placeholder", "Placeholder", "Placeholder"],
+
+  "portfolioTitle": "Portfólio",
+
+  "projectTitle0": "Dashboard genérica",
+  "projectTitle1": "Calendário de Eventos",
+  "projectTitle2": "Sapataria Henrique",
+  "projectTitle3": "HHS Elétrica",
+  "projectTitle4": "ConstruPontes",
+  "projectTitle5": "Em Breve",
+
+  "projectStack0": "React, TypeScript, Node, Express, SQLite",
+  "projectStack1": "React, Node, Express, MongoDB",
+  "projectStack2": "React, Node, Express, MySQL",
+  "projectStack3": "Vue, Sass",
+  "projectStack4": "Vue, Sass",
+  "projectStack5": "React, Go, MongoDB",
+
+  "viewProject": "VER PROJETO",
+  "viewMore": "VER MAIS",
+  "viewLess": "VER MENOS",
+  "sendMessageTitle": "Me envie uma mensagem!",
+  "sendMessageText": "Deseja perguntar algo, conversar, ou dizer um oi?",
+  "getInTouch": "MANDAR EMAIL"
+}
