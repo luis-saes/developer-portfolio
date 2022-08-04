@@ -30,6 +30,7 @@ const Skills = () => {
         {sectionsButtons.map((el, index) => (
           <div className={styles.button} key={index}>
             <GenericSectionsButton
+              skills={true}
               click={changeActiveHandler}
               text={el}
               index={index}

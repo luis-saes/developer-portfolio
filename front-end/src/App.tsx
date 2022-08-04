@@ -7,6 +7,7 @@ import About from "./views/About";
 import Skills from "./views/Skills";
 import Experience from "./views/Experience";
 import Portfolio from "./views/Portfolio";
+import Contact from "./views/Contact";
 
 import Footer from "./components/Footer/Footer";
 import "./sassStyles/_main.scss";
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Experience />
       <Portfolio />
+      <Contact />
       {/* <CustomTitle />
       <GenericSectionsButton text="teste" />
       {SVGs.map(({ element, text, percentage }) => (

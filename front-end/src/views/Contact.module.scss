@@ -1,0 +1,23 @@
+@import "../sassStyles/variables";
+
+.main {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactMessage {
+  font-family: "SF Pro";
+  font-size: 16px;
+  text-align: center;
+}
+
+.light .contactMessage {
+  color: $text-light;
+}
+
+.dark .contactMessage {
+  color: $text-dark;
+}
