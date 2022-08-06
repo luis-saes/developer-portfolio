@@ -1,3 +1,7 @@
+<p>EN | 
+  <a href="https://github.com/luis-saes/developer-portfolio/blob/main/README-pt-BR.md">PT-BR</a>
+</p>
+
 <div align="center">
   <img src="./media/logo.svg" alt="Website Logo" width="120px" />
 </div>
