@@ -1,6 +1,5 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import useWindowDimensions from "../../utils/WindowDimensions";
 import { ReactComponent as Linkedin } from "../../assets/svg/socialMedia/linkedin.svg";
 import { ReactComponent as Github } from "../../assets/svg/socialMedia/github.svg";
 import { ReactComponent as Medium } from "../../assets/svg/socialMedia/medium.svg";
@@ -8,13 +7,6 @@ import styles from "./FooterMobile.module.scss";
 
 const FooterMobile = () => {
   const { theme } = useContext(ThemeContext);
-  const [expanded, setExpanded] = useState(false);
-
-  const { height, width } = useWindowDimensions();
-
-  useEffect(() => {
-    setExpanded(width > 1399);
-  }, [height, width]);
 
   return (
     <div className={`${styles[theme]} ${styles.wrapper}`}>

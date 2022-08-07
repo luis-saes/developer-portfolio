@@ -5,7 +5,7 @@ import styles from "./SkillProgress.module.scss";
 
 type PrivateProps = {
   icon: any;
-  text: String;
+  text: string;
   percentage: number;
 };
 

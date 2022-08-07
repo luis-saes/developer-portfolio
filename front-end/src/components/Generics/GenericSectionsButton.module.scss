@@ -1,7 +1,5 @@
 @import "../../sassStyles/variables";
 
-@import "../../sassStyles/variables";
-
 .button {
   border: 1px solid;
   border-radius: 5px;
@@ -13,7 +11,7 @@
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  font-family: "SF Pro";
+  font-family: "SF Pro", sans-serif;
   text-align: center;
   font-size: 15px;
   transition: 200ms;

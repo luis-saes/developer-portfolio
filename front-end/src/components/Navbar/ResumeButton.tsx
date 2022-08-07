@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import i18next from "i18next";
 import Cookies from "js-cookie";
 import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./ResumeButton.module.scss";

@@ -19,7 +19,7 @@ import { ReactComponent as Typescript } from "../../assets/svg/skills/typescript
 import { ReactComponent as Vbdotnet } from "../../assets/svg/skills/vb-dotnet.svg";
 import { ReactComponent as Vue } from "../../assets/svg/skills/vue.svg";
 
-const SVGs = [
+const SkillsList = [
   {
     text: "Angular",
     element: Angular,
@@ -148,6 +148,6 @@ const compare = (el1: any, el2: any): number => {
   return 0;
 };
 
-SVGs.sort(compare);
+SkillsList.sort(compare);
 
-export default SVGs;
+export default SkillsList;

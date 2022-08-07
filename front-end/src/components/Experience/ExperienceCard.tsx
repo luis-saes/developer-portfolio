@@ -15,8 +15,6 @@ type PrivateProps = {
 const ExperienceCard = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
 
-  console.log(props.topics);
-
   return (
     <div
       className={`py-3 px-5 ${styles[theme]} ${styles.experienceCardWrapper}`}

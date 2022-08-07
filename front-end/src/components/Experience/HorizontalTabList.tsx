@@ -1,4 +1,4 @@
-import React, { useContext, createElement, useState } from "react";
+import React, { useContext, createElement } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./HorizontalTabList.module.scss";
 
@@ -9,10 +9,8 @@ type PrivateProps = {
   currentActiveIndex: number;
 };
 
-const VerticalTabList = (props: PrivateProps) => {
+const HorizontalTabList = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
-
-  console.log(typeof props.companies);
 
   const changeIndexAndCallFather = (index: number) => {
     props.setCurrentActiveIndex(index);
@@ -24,10 +22,8 @@ const VerticalTabList = (props: PrivateProps) => {
       {props.companies.map(
         (
           {
-            text,
             element,
           }: {
-            text: string;
             element: any;
           },
           index: number
@@ -52,4 +48,4 @@ const VerticalTabList = (props: PrivateProps) => {
   );
 };
 
-export default VerticalTabList;
+export default HorizontalTabList;

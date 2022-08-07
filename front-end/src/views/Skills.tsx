@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import CustomTitle from "../components/Generics/CustomTitle";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
 import SkillProgress from "../components/Skills/SkillProgress";
-import SVGs from "../components/Skills/SvgImports";
+import SkillsList from "../components/Skills/SkillsList";
 import { ThemeContext } from "../context/ThemeContext";
 import styles from "./Skills.module.scss";
 
@@ -40,8 +40,7 @@ const Skills = () => {
         ))}
       </div>
       <div className={styles.skillCardWrapper}>
-        {/* TODO: change filter and map to reduce */}
-        {SVGs.filter(filterByCategory).map((el) => (
+        {SkillsList.filter(filterByCategory).map((el) => (
           <div className={styles.skillCard} key={el.text}>
             <SkillProgress
               key={el.text}
