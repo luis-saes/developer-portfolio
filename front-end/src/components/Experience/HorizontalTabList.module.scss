@@ -16,18 +16,6 @@
   align-items: center;
   justify-content: center;
   width: 60px;
-}
-
-.svg {
-  margin-bottom: 5px;
-}
-
-.bar {
-  width: 60px;
-  border-bottom: 3px solid;
-}
-
-.wrapper {
   cursor: pointer;
 }
 
@@ -44,6 +32,8 @@
 .bar {
   transition: border-color;
   transition-duration: 500ms;
+  width: 60px;
+  border-bottom: 3px solid;
 }
 
 .light .active {
@@ -111,4 +101,5 @@
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  margin-bottom: 5px;
 }

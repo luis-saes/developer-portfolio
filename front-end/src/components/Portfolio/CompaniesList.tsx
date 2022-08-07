@@ -5,7 +5,7 @@ import { ReactComponent as Hhs } from "../../assets/svg/projects/hhs.svg";
 import { ReactComponent as Construpontes } from "../../assets/svg/projects/construpontes.svg";
 import { ReactComponent as ComingSoon } from "../../assets/svg/projects/coming-soon.svg";
 
-const SVGsCompanies = [
+const CompaniesList = [
   {
     icon: Dashboard,
     link: "https://github.com/luis-saes/portfolio-dashboard",
@@ -32,4 +32,4 @@ const SVGsCompanies = [
   },
 ];
 
-export default SVGsCompanies;
+export default CompaniesList;

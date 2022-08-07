@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./ThemeButton.module.scss";
 
 type PrivateProps = {
-  expanded: Boolean;
+  expanded: boolean;
 };
 
 const ThemeButton = (props: PrivateProps) => {
@@ -39,7 +39,6 @@ const ThemeButton = (props: PrivateProps) => {
     } else {
       setTheme("light");
     }
-    console.log("Changed");
   };
 
   return (

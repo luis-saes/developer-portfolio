@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./GenericSectionsButton.module.scss";
 
 type PrivateProps = {
-  text: String;
+  text: string;
   index?: number;
   active?: boolean;
   click?: (index: number) => void;

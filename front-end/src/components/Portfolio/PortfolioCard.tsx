@@ -5,7 +5,7 @@ import GenericSectionsButton from "../Generics/GenericSectionsButton";
 import styles from "./PortfolioCard.module.scss";
 
 type PrivateProps = {
-  title: String;
+  title: string;
   Icon: any;
   stack: string;
   link: string;

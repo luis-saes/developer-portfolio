@@ -1,4 +1,4 @@
-import React, { useContext, createElement, useState } from "react";
+import React, { useContext, createElement } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./VerticalTabList.module.scss";
 

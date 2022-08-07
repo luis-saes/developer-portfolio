@@ -30,9 +30,9 @@ i18n
     },
     fallbackLng: "en",
     backend: {
-      // loadPath:
-      //   process.env.PUBLIC_URL + "/assets/locales/{{lng}}/translation.json", // used for localhost purposes
-      loadPath: "./assets/locales/{{lng}}/translation.json", //used for deploy purposes
+      loadPath:
+        process.env.PUBLIC_URL + "/assets/locales/{{lng}}/translation.json", // used for localhost purposes
+      // loadPath: "./assets/locales/{{lng}}/translation.json", //used for deploy purposes
     },
   });
 

@@ -3,7 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import styles from "./CustomTitle.module.scss";
 
 type PrivateProps = {
-  title: String;
+  title: string;
 };
 
 const CustomTitle = (props: PrivateProps) => {

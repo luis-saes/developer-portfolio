@@ -8,7 +8,7 @@ import GenericButton from "./GenericButton";
 import LanguageButton from "./LanguageButton";
 import ResumeButton from "./ResumeButton";
 import ThemeButton from "./ThemeButton";
-import useWindowDimensions from "../../utils/WindowDimensions";
+import WindowDimensions from "../../utils/WindowDimensions";
 import { ReactComponent as LogoDark } from "../../assets/svg/navbar-dark.svg";
 import { ReactComponent as LogoLight } from "../../assets/svg/navbar-light.svg";
 import styles from "./CustomNavbar.module.scss";
@@ -22,7 +22,7 @@ const CustomNavbar = (props: PrivateProps) => {
   const { theme } = useContext(ThemeContext);
   const [expanded, setExpanded] = useState<any>(false);
 
-  const { width } = useWindowDimensions();
+  const { width } = WindowDimensions();
 
   const onClickLink = (index: number) => {
     setExpanded(false);

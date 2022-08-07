@@ -1,5 +1,4 @@
 import React, { useContext, useRef } from "react";
-import { useTranslation } from "react-i18next";
 import { ThemeContext } from "./context/ThemeContext";
 import CustomNavbar from "./components/Navbar/CustomNavbar";
 import Home from "./views/Home";
@@ -15,7 +14,6 @@ import styles from "./App.module.scss";
 
 function App() {
   const { theme } = useContext(ThemeContext);
-  const { t } = useTranslation();
 
   const home = useRef<any>();
   const about = useRef<any>();

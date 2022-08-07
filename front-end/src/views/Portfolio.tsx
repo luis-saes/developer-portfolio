@@ -1,16 +1,15 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
-import useWindowDimensions from "../utils/WindowDimensions";
 import { ThemeContext } from "../context/ThemeContext";
 import CustomTitle from "../components/Generics/CustomTitle";
-import SVGImportsPortfolio from "../components/Portfolio/SVGImportsPortfolio";
+import SVGImportsPortfolio from "../components/Portfolio/CompaniesList";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
 import styles from "./Portfolio.module.scss";
 
-const Experience = () => {
+const Portfolio = () => {
   const [projectsExpanded, setProjectsExpanded] = useState<boolean>(false);
-  const [buttonText, setButtonText] = useState<String>("viewMore");
+  const [buttonText, setButtonText] = useState<string>("viewMore");
 
   const expandClickHandler = () => {
     if (!projectsExpanded) {
@@ -22,7 +21,6 @@ const Experience = () => {
   };
 
   const { t } = useTranslation();
-  const { height, width } = useWindowDimensions();
   const { theme } = useContext(ThemeContext);
   const otherProjects = SVGImportsPortfolio.slice(3).map(
     (el: any, index: number) => (
@@ -64,4 +62,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Portfolio;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import useWindowDimensions from "../utils/WindowDimensions";
+import WindowDimensions from "../utils/WindowDimensions";
 import CustomTitle from "../components/Generics/CustomTitle";
-import SVGsCompanies from "../components/Experience/SvgImports";
+import CompaniesList from "../components/Experience/CompaniesList";
 import HorizontalTabList from "../components/Experience/HorizontalTabList";
 import VerticalTabList from "../components/Experience/VerticalTabList";
 import ExperienceCard from "../components/Experience/ExperienceCard";
@@ -10,7 +10,7 @@ import styles from "./Experience.module.scss";
 
 const Experience = () => {
   const { t } = useTranslation();
-  const { width } = useWindowDimensions();
+  const { width } = WindowDimensions();
 
   const [changeCompany, setChangeCompany] = useState<number>(0);
   const [currentActive, setCurrentActive] = useState<number>(0);
@@ -22,7 +22,7 @@ const Experience = () => {
   let endTimes: string[] = [];
   let topicsMatrix: string[][] = [];
 
-  SVGsCompanies.forEach((el, index: number) => {
+  CompaniesList.forEach((el, index: number) => {
     titles = [...titles, t(`role${index}`)];
     companies = [...companies, t(`company${index}`)];
     links = [...links, el.link];
@@ -48,14 +48,14 @@ const Experience = () => {
       <div className={styles.wrapper}>
         {width > 950 ? (
           <VerticalTabList
-            companies={SVGsCompanies}
+            companies={CompaniesList}
             changeCompany={companyChangeHandler}
             setCurrentActiveIndex={currentActiveChange}
             currentActiveIndex={currentActive}
           />
         ) : (
           <HorizontalTabList
-            companies={SVGsCompanies}
+            companies={CompaniesList}
             changeCompany={companyChangeHandler}
             setCurrentActiveIndex={currentActiveChange}
             currentActiveIndex={currentActive}
