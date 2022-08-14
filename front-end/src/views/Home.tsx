@@ -15,7 +15,7 @@ const Home = () => {
   const { height, width } = WindowDimensions();
 
   useEffect(() => {
-    setExpanded(width > 1399);
+    setExpanded(width > 991);
   }, [height, width]);
 
   return (
