@@ -1,13 +1,16 @@
 .themeButtonExpanded {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .themeButtonCollapsed {
-  margin-top: 15px;
   padding-bottom: 20px;
 }
 
 .themeButton {
+  display: flex;
+  flex: row;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: none;
   text-align: center;

@@ -40,7 +40,7 @@ const ThemeButton = (props: PrivateProps) => {
       setTheme("light");
     }
   };
-
+  console.log(props.expanded);
   return (
     <button
       onClick={switchTheme}

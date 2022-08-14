@@ -14,6 +14,17 @@
   background-color: $primary-dark;
 }
 
+.themeButtonCompressed {
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .light .svg {
   fill: $complementar-light;
 }
@@ -46,5 +57,11 @@
 @media (max-height: 410px) {
   .navLink {
     padding: 2px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav {
+    height: 66px;
   }
 }

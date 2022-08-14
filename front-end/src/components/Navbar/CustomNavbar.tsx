@@ -61,12 +61,12 @@ const CustomNavbar = (props: PrivateProps) => {
 
   return (
     <Navbar
-      expand="xxl"
+      expand="lg"
       fixed="top"
       className={`${styles[theme]} ${styles.main}`}
       expanded={expanded}
     >
-      <Container>
+      <Container className={styles.container}>
         <Navbar.Brand href="#home">
           {theme === "light" ? <LogoLight /> : <LogoDark />}
         </Navbar.Brand>
@@ -91,30 +91,33 @@ const CustomNavbar = (props: PrivateProps) => {
         </Navbar.Toggle>
         <Navbar.Collapse
           id="basic-navbar-nav"
-          className={`${width < 1400 ? styles.navExpanded : styles.nav}`}
+          className={`${width < 992 ? styles.navExpanded : styles.nav}`}
         >
-          <Nav className={styles.nav}>
-            {genericButtons.map(({ section, text }, index: number) => {
-              return (
-                <Nav.Link
-                  key={section}
-                  onClick={() => onClickLink(index)}
-                  className={styles.navLink}
-                >
-                  <GenericButton text={text} />
-                </Nav.Link>
-              );
-            })}
-            <Nav.Item onClick={() => setExpanded(false)}>
-              <ResumeButton text={t("resume")} expanded={width > 1399} />
-            </Nav.Item>
-            <Nav.Item
-              className="border-left pl-2 ml-auto"
-              onClick={() => setExpanded(false)}
-            >
-              <ThemeButton expanded={width > 1399} />
-            </Nav.Item>
-          </Nav>
+          <Container>
+            <Nav className={styles.nav}>
+              {genericButtons.map(({ section, text }, index: number) => {
+                return (
+                  <Nav.Link
+                    key={section}
+                    onClick={() => onClickLink(index)}
+                    className={styles.navLink}
+                  >
+                    <GenericButton text={text} />
+                  </Nav.Link>
+                );
+              })}
+              <Nav.Item onClick={() => setExpanded(false)}>
+                <ResumeButton text={t("resume")} expanded={width > 991} />
+              </Nav.Item>
+              <Nav.Item
+                className={`border-left pl-2 ml-auto ${
+                  width > 991 ? null : styles.themeButtonCompressed
+                }`}
+              >
+                <ThemeButton expanded={width > 991} />
+              </Nav.Item>
+            </Nav>
+          </Container>
         </Navbar.Collapse>
       </Container>
     </Navbar>
