@@ -7,6 +7,7 @@
 }
 
 .themeButton {
+  height: 70px;
   display: flex;
   flex: row;
   align-items: center;
@@ -21,6 +22,7 @@
 @media (max-height: 620px) {
   .themeButton {
     margin-top: 0px;
+    height: 30px;
   }
 }
 
