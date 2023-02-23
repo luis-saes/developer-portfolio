@@ -38,7 +38,7 @@ const LanguageButton = () => {
       id="languages"
       className={`${styles[theme]} ${styles.select}`}
       defaultValue={mDefaultValue[0].code}
-      onClick={changeLanguage}
+      onChange={changeLanguage}
     >
       {languages.map(({ code, name }) => {
         return (
