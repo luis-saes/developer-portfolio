@@ -25,7 +25,7 @@ const FooterMobile = () => {
           <Medium className={styles.icon} style={{ marginLeft: "7px" }} />
         </a>
       </div>
-      <div className={styles.text}>© 2022 Luis Henrique Saes Scandelai</div>
+      <div className={styles.text}>© 2023 Luis Henrique Saes Scandelai</div>
     </div>
   );
 };
