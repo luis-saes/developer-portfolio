@@ -1,9 +1,4 @@
-import React, {
-  FunctionComponent,
-  SVGProps,
-  useContext,
-  useState,
-} from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import CustomTitle from "../components/Generics/CustomTitle";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
@@ -19,12 +14,19 @@ const Skills = () => {
   const { t } = useTranslation();
 
   const [currentActiveIndex, setCurrentActiveIndex] = useState<number>(0);
-  const categories = ["web", "tools", "other"];
+  const [currentActiveSkills, setCurrentActiveSkills] =
+    useState<SkillsListInterface[]>(SkillsList);
   const sectionsButtons = ["Web", t("tools"), t("other")];
 
-  const filterByCategory = (obj: SkillsListInterface) => {
-    return obj.category === categories[currentActiveIndex];
-  };
+  useEffect(() => {
+    const categories = ["web", "tools", "other"];
+
+    const filterByCategory = (obj: SkillsListInterface) => {
+      return obj.category === categories[currentActiveIndex];
+    };
+
+    setCurrentActiveSkills(SkillsList.filter(filterByCategory));
+  }, [currentActiveIndex]);
 
   const changeActiveHandler = (index: number) => {
     setCurrentActiveIndex(index);
@@ -47,16 +49,40 @@ const Skills = () => {
         ))}
       </div>
       <div className={styles.skillCardWrapper}>
-        {SkillsList.filter(filterByCategory).map((el) => (
-          <div className={styles.skillCard} key={el.text}>
-            <SkillProgress
-              key={el.text}
-              icon={el.element}
-              text={el.text}
-              percentage={el.percentage}
-            />
-          </div>
-        ))}
+        {currentActiveSkills.map((el, i, arr) => {
+          if (i % 2 === 1) {
+            return null;
+          }
+          if (!arr[i + 1] && i % 2 === 0) {
+            return (
+              <div className={styles.skillCard} key={el.text}>
+                <SkillProgress
+                  key={el.text}
+                  icon={el.element}
+                  text={el.text}
+                  percentage={el.percentage}
+                />
+              </div>
+            );
+          } else {
+            return (
+              <div className={styles.skillCard} key={el.text}>
+                <SkillProgress
+                  key={el.text}
+                  icon={el.element}
+                  text={el.text}
+                  percentage={el.percentage}
+                />
+                <SkillProgress
+                  key={arr[i + 1].text}
+                  icon={arr[i + 1].element}
+                  text={arr[i + 1].text}
+                  percentage={arr[i + 1].percentage}
+                />
+              </div>
+            );
+          }
+        })}
       </div>
     </div>
   );
