@@ -1,9 +1,15 @@
-import React, { useContext, createElement } from "react";
+import React, {
+  useContext,
+  createElement,
+  FunctionComponent,
+  SVGProps,
+} from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { CompaniesListInterface } from "./CompaniesList";
 import styles from "./HorizontalTabList.module.scss";
 
 type PrivateProps = {
-  companies: any;
+  companies: CompaniesListInterface[];
   changeCompany: (index: number) => void;
   setCurrentActiveIndex: (index: number) => void;
   currentActiveIndex: number;
@@ -24,7 +30,11 @@ const HorizontalTabList = (props: PrivateProps) => {
           {
             element,
           }: {
-            element: any;
+            element: FunctionComponent<
+              SVGProps<SVGSVGElement> & {
+                title?: string | undefined;
+              }
+            >;
           },
           index: number
         ) => {

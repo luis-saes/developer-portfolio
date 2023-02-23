@@ -1,3 +1,4 @@
+import { FunctionComponent, SVGProps } from "react";
 import { ReactComponent as Angular } from "../../assets/svg/skills/angular.svg";
 import { ReactComponent as Bootstrap } from "../../assets/svg/skills/bootstrap.svg";
 import { ReactComponent as Cpp } from "../../assets/svg/skills/cpp.svg";
@@ -19,7 +20,18 @@ import { ReactComponent as Typescript } from "../../assets/svg/skills/typescript
 import { ReactComponent as Vbdotnet } from "../../assets/svg/skills/vb-dotnet.svg";
 import { ReactComponent as Vue } from "../../assets/svg/skills/vue.svg";
 
-const SkillsList = [
+export interface SkillsListInterface {
+  text: string;
+  element: FunctionComponent<
+    SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
+  percentage: number;
+  category: string;
+}
+
+const SkillsList: SkillsListInterface[] = [
   {
     text: "Angular",
     element: Angular,
@@ -142,7 +154,10 @@ const SkillsList = [
   },
 ];
 
-const compare = (el1: any, el2: any): number => {
+const compare = (
+  el1: SkillsListInterface,
+  el2: SkillsListInterface
+): number => {
   if (el1.percentage > el2.percentage) return -1;
   if (el1.percentage < el2.percentage) return 1;
   return 0;
