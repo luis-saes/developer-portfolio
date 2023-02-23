@@ -12,6 +12,8 @@
 
 This developer portfolio, made from scratch by me, tells a little about myself, my dreams and my journey as a developer. I put my heart into this project and I hope it can help someone build their own portfolio.
 
+You can access the website through the following link: https://luis-saes.github.io/developer-portfolio/
+
 ## Design
 
 The design was made using Figma. You can check out the ![design file](https://www.figma.com/file/QGfGc9Jc5zXMAtfVC9YPFg/Portfolio-Website).
