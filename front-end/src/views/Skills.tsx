@@ -1,9 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, {
+  FunctionComponent,
+  SVGProps,
+  useContext,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import CustomTitle from "../components/Generics/CustomTitle";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
 import SkillProgress from "../components/Skills/SkillProgress";
-import SkillsList from "../components/Skills/SkillsList";
+import SkillsList, {
+  SkillsListInterface,
+} from "../components/Skills/SkillsList";
 import { ThemeContext } from "../context/ThemeContext";
 import styles from "./Skills.module.scss";
 
@@ -15,7 +22,7 @@ const Skills = () => {
   const categories = ["web", "tools", "other"];
   const sectionsButtons = ["Web", t("tools"), t("other")];
 
-  const filterByCategory = (obj: any) => {
+  const filterByCategory = (obj: SkillsListInterface) => {
     return obj.category === categories[currentActiveIndex];
   };
 
