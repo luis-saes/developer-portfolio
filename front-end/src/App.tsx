@@ -15,12 +15,12 @@ import styles from "./App.module.scss";
 function App() {
   const { theme } = useContext(ThemeContext);
 
-  const home = useRef<any>();
-  const about = useRef<any>();
-  const skills = useRef<any>();
-  const experience = useRef<any>();
-  const portfolio = useRef<any>();
-  const contact = useRef<any>();
+  const home = useRef<HTMLDivElement>(null);
+  const about = useRef<HTMLDivElement>(null);
+  const skills = useRef<HTMLDivElement>(null);
+  const experience = useRef<HTMLDivElement>(null);
+  const portfolio = useRef<HTMLDivElement>(null);
+  const contact = useRef<HTMLDivElement>(null);
 
   return (
     <div className={`${theme} ${styles.app}`}>
