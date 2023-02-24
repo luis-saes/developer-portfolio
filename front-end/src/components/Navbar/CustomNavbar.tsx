@@ -116,7 +116,7 @@ const CustomNavbar = (props: PrivateProps) => {
                 className={`border-left pl-2 ml-auto ${
                   width > 991 ? null : styles.themeButtonCompressed
                 }`}
-                onClick={() => setExpanded(expanded ? false : false)}
+                onClick={() => setExpanded(false)}
               >
                 <ThemeButton expanded={width > 991} />
               </Nav.Item>
