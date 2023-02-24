@@ -18,7 +18,20 @@ export const ThemeContext = createContext<ThemeContextType>({
 });
 
 export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const initialState = localStorage.getItem("theme");
+
+  let rightTheme;
+  if (initialState) {
+    rightTheme = initialState;
+  } else {
+    rightTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  }
+
+  localStorage.setItem("theme", rightTheme);
+
+  const [theme, setTheme] = useState(rightTheme);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
