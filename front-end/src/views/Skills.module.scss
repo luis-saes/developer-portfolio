@@ -16,14 +16,13 @@
 }
 
 .skillCardWrapper {
+  columns: 2 auto;
   margin-top: 40px;
 }
 
 .skillCard {
   margin: 0px 20px;
   height: 110px;
-  display: flex;
-  flex-direction: row;
 }
 
 .button {
