@@ -42,7 +42,7 @@ const ThemeButton = (props: PrivateProps) => {
       localStorage.setItem("theme", "light");
     }
   };
-  console.log(props.expanded);
+
   return (
     <button
       onClick={switchTheme}
