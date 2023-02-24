@@ -26,7 +26,7 @@ const Portfolio = () => {
   const { theme } = useContext(ThemeContext);
   const otherProjects = SVGImportsPortfolio.slice(3).map(
     (el: CompaniesListInterface, index: number) => (
-      <div className={styles.cards} key={index}>
+      <div className={styles.cards} key={el.link}>
         <PortfolioCard
           title={t(`projectTitle${index + 3}`)}
           Icon={el.icon}
@@ -45,7 +45,7 @@ const Portfolio = () => {
       <div className={styles.cardsWrapper}>
         {SVGImportsPortfolio.slice(0, 3).map(
           (el: CompaniesListInterface, index: number) => (
-            <div className={styles.cards} key={index}>
+            <div className={styles.cards} key={el.link}>
               <PortfolioCard
                 title={t(`projectTitle${index}`)}
                 Icon={el.icon}

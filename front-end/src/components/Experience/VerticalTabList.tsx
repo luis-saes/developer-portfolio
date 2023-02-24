@@ -34,7 +34,7 @@ const VerticalTabList = (props: PrivateProps) => {
             text: string;
             element: FunctionComponent<
               SVGProps<SVGSVGElement> & {
-                title?: string | undefined;
+                title?: string;
               }
             >;
           },
@@ -42,7 +42,7 @@ const VerticalTabList = (props: PrivateProps) => {
         ) => {
           return (
             <div
-              key={index}
+              key={text}
               className={`${styles.wrapper} ${
                 props.currentActiveIndex === index
                   ? styles.active

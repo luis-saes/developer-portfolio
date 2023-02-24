@@ -41,7 +41,7 @@ export interface SkillsListInterface {
   text: string;
   element: FunctionComponent<
     SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
+      title?: string;
     }
   >;
   percentage: number;
