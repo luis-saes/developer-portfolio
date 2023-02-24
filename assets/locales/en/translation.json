@@ -13,40 +13,52 @@
   "hello": "Hello there 👋, my name is",
   "role": "Full Stack Developer",
   "whoIAm": "Who I am",
-  "whoIAmText": "I am an extremely motivated computer science student with strong verbal, written and communication skills. Passionate about cutting edge technologies and their development logic. I am interested in positions focused on software engineering and development.\n\nI have already developed static and dynamic web applications, participated in several commercial projects, e-commerce applications, using web scraping and creating and maintaining databases. I helped to merge the databases of a tool used by two multinational companies in a period of 6 months.",
+  "whoIAmText": "Proficient Full Stack Software Developer with 3+ years of business experience in the IT industry. I help companies design, develop and build high quality web and mobile software products, working with cross-functional teams. I have experience developing features in Front and Back-End applications.\n\nCommitted to continuous learning and currently learning Italian. I am dedicated to improving my language skills so that I can better understand and appreciate the Italian culture.\nEnthusiastic about opportunities that motivate and challenge me as they give me the opportunity to learn new skills, grow personally and professionally and learn about leadership.\n\nI'm always looking to connect with new people. Feel free to contact me at saeslhs@gmail.com or on LinkedIn.",
   "mySkills": "My Skills",
   "tools": "Tools",
   "other": "Other",
   "experience": "Experience",
 
-  "role0": "Information Engineering Intern",
-  "company0": "Embraer",
-  "startTime0": "Apr. 2021",
-  "endTime0": "Apr. 2022",
+  "role0": "Full Stack Developer",
+  "company0": "WeVets",
+  "startTime0": "Aug. 2022",
+  "endTime0": "Feb. 2023",
   "topics0": [
-    "Internal software conception and development.",
-    "Maintenance, updating and merge of different databases.",
-    "Refactoring of internal tools."
+    "Launched new features in a scalable way and corrected bugs in veterinary hospital dashboard in .NET Core with C# and Angular following code standards such as Clean Code, S.O.L.I.D and DDD with a focus on the end user",
+    "Created CI/CD pipelines in Azure",
+    "Created and updated microservices and RESTful APIs for use in the system",
+    "Updated relational databases like SQL Server",
+    "Used Git for code versioning"
   ],
 
-  "role1": "Full Stack Developer",
-  "company1": "Comp Junior",
-  "startTime1": "Nov. 2020",
-  "endTime1": "Jul. 2022",
+  "role1": "Full Stack Developer Intern",
+  "company1": "Embraer",
+  "startTime1": "Apr. 2021",
+  "endTime1": "Apr. 2022",
   "topics1": [
-    "Creation of dynamic and interactive dashboards using MVC pattern and update of databases",
-    "Development of static and dynamic websites, using the state-of-the-art web technologies",
-    "Backlog construction and maintenance and management of scrum meetings"
+    "Conceived and developed internal software",
+    "Maintained, updated and merged different databases",
+    "Refactored internal tools"
   ],
 
-  "role2": "Software Quality Assurance Analyst",
-  "company2": "Global Technologies",
-  "startTime2": "Feb. 2021",
-  "endTime2": "Apr. 2021",
+  "role2": "Full Stack Developer",
+  "company2": "Comp Junior",
+  "startTime2": "Nov. 2020",
+  "endTime2": "Jul. 2022",
   "topics2": [
-    "Maintenance of software quality standards through scrum",
-    "Protocol standardization",
-    "Creation of documentation to maintain the development team's backlog"
+    "Developed .NET and C# web features and integrated mobile app with 1.000+ active users",
+    "Merged 200+ tables with combined 10+ million rows from multiple relational databases using SQL queries",
+    "Created and organized databases and back-end structures for internal systems"
+  ],
+
+  "role3": "Software Quality Assurance Analyst",
+  "company3": "Global Technologies",
+  "startTime3": "Feb. 2021",
+  "endTime3": "Apr. 2021",
+  "topics3": [
+    "Maintained software quality standards through scrum",
+    "Standardized internal protocols",
+    "Created documentation to maintain development team's backlog"
   ],
 
   "portfolioTitle": "Portfolio",
