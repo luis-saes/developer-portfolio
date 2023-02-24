@@ -8,7 +8,7 @@ type PrivateProps = {
   title: string;
   Icon: FunctionComponent<
     React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
+      title?: string;
     }
   >;
   stack: string;

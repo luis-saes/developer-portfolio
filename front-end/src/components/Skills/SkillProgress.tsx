@@ -6,7 +6,7 @@ import styles from "./SkillProgress.module.scss";
 type PrivateProps = {
   icon: FunctionComponent<
     React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
+      title?: string;
     }
   >;
   text: string;

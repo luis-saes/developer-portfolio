@@ -8,7 +8,7 @@ import { ReactComponent as ComingSoon } from "../../assets/svg/projects/coming-s
 export interface CompaniesListInterface {
   icon: React.FunctionComponent<
     React.SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
+      title?: string;
     }
   >;
   link: string;

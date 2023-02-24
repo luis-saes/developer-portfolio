@@ -5,6 +5,7 @@ import React, {
   ReactNode,
   SetStateAction,
   useState,
+  useMemo,
 } from "react";
 
 interface ThemeContextType {
@@ -33,8 +34,10 @@ export const ThemeProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
   const [theme, setTheme] = useState(rightTheme);
 
+  const contextValue = useMemo(() => ({ theme, setTheme }), [theme]);
+
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={contextValue}>
       {children}
     </ThemeContext.Provider>
   );

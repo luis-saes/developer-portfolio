@@ -8,7 +8,7 @@ export interface CompaniesListInterface {
   text: string;
   element: FunctionComponent<
     SVGProps<SVGSVGElement> & {
-      title?: string | undefined;
+      title?: string;
     }
   >;
   link: string;

@@ -30,7 +30,7 @@ const Skills = () => {
       <CustomTitle title={t("mySkills")} />
       <div className={styles.buttonWrapper}>
         {sectionsButtons.map((el, index) => (
-          <div className={styles.button} key={index}>
+          <div className={styles.button} key={el}>
             <GenericSectionsButton
               skills={true}
               click={changeActiveHandler}

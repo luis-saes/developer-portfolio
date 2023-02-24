@@ -37,7 +37,7 @@ const ExperienceCard = (props: PrivateProps) => {
       } - ${props.endTime[props.currentActive]}`}</div>
       <ul>
         {props.topics[props.currentActive].map((val, index) => (
-          <li className={styles.topics} key={`${props.currentActive}${index}`}>
+          <li className={styles.topics} key={val}>
             {val}
           </li>
         ))}

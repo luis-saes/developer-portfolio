@@ -29,18 +29,20 @@ const HorizontalTabList = (props: PrivateProps) => {
         (
           {
             element,
+            link,
           }: {
             element: FunctionComponent<
               SVGProps<SVGSVGElement> & {
-                title?: string | undefined;
+                title?: string;
               }
             >;
+            link: string;
           },
           index: number
         ) => {
           return (
             <div
-              key={index}
+              key={link}
               className={`${styles.wrapper} ${
                 props.currentActiveIndex === index
                   ? styles.active
