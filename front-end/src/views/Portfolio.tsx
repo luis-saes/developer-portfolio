@@ -2,7 +2,9 @@ import React, { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../context/ThemeContext";
 import CustomTitle from "../components/Generics/CustomTitle";
-import SVGImportsPortfolio from "../components/Portfolio/CompaniesList";
+import SVGImportsPortfolio, {
+  CompaniesListInterface,
+} from "../components/Portfolio/CompaniesList";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
 import styles from "./Portfolio.module.scss";
@@ -23,7 +25,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
   const otherProjects = SVGImportsPortfolio.slice(3).map(
-    (el: any, index: number) => (
+    (el: CompaniesListInterface, index: number) => (
       <div className={styles.cards} key={index}>
         <PortfolioCard
           title={t(`projectTitle${index + 3}`)}
@@ -41,16 +43,18 @@ const Portfolio = () => {
         <CustomTitle title={t("portfolioTitle")} />
       </div>
       <div className={styles.cardsWrapper}>
-        {SVGImportsPortfolio.slice(0, 3).map((el: any, index: number) => (
-          <div className={styles.cards} key={index}>
-            <PortfolioCard
-              title={t(`projectTitle${index}`)}
-              Icon={el.icon}
-              stack={t(`projectStack${index}`)}
-              link={el.link}
-            />
-          </div>
-        ))}
+        {SVGImportsPortfolio.slice(0, 3).map(
+          (el: CompaniesListInterface, index: number) => (
+            <div className={styles.cards} key={index}>
+              <PortfolioCard
+                title={t(`projectTitle${index}`)}
+                Icon={el.icon}
+                stack={t(`projectStack${index}`)}
+                link={el.link}
+              />
+            </div>
+          )
+        )}
       </div>
       <div className={styles.cardsWrapper}>
         {projectsExpanded ? otherProjects : null}

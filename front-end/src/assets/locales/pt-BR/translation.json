@@ -13,37 +13,49 @@
   "hello": "Olá 👋, me chamo",
   "role": "Desenvolvedor Full Stack",
   "whoIAm": "Sobre mim",
-  "whoIAmText": "Eu sou um estudante de Ciência da Computação extremamente motivado com fortes habilidades verbais, escritas e de comunicação. Apaixonado por tecnologias de ponta e sua lógica de desenvolvimento. Me interesso por posições focadas na engenharia de software e de desenvolvimento.\n\nJá desenvolvi aplicações web estáticas e dinâmicas, participei de diversos projetos comerciais, aplicações de e-commerce, utilização de web scraping e criação e manutenção de bases de dados. Auxiliei na junção das bases de dados de uma ferramenta utilizada por duas empresas multinacionais no período de 6 meses.",
+  "whoIAmText": "Proficiente Desenvolvedor de Software Full Stack com 3+ anos de experiência comercial na indústria de TI. Eu ajudo empresas a projetar, desenvolver e construir produtos de software web e mobile de alta qualidade, trabalhando com equipes multifuncionais. Possuo experiência no desenvolvimento de recursos em aplicativos Front e Back-End.\n\nComprometido com o aprendizado contínuo e atualmente estou aprendendo italiano. Dedico-me a melhorar minhas habilidades no idioma para que eu possa entender e apreciar melhor a cultura italiana.\nEntusiasmado com as oportunidades que me motivam e me desafiam, pois me dão a oportunidade de aprender novas habilidades, crescer pessoal e profissionalmente e aprender sobre liderança.\n\nEstou sempre procurando me conectar com novas pessoas. Sinta-se à vontade para entrar em contato comigo em saeslhs@gmail.com ou no LinkedIn.",
   "mySkills": "Minhas Habilidades",
   "tools": "Ferramentas",
   "other": "Outros",
   "experience": "Experiência",
 
-  "role0": "Estagiário de Engenharia da Informação",
-  "company0": "Embraer",
-  "startTime0": "Abr. 2021",
-  "endTime0": "Abr. 2022",
+  "role0": "Desenvolvedor Full Stack",
+  "company0": "WeVets",
+  "startTime0": "Ago. 2022",
+  "endTime0": "Fev. 2023",
   "topics0": [
+    "Lançamento de novas funcionalidades de forma escalável e correção de bugs no sistema hospitalar veterinário em .NET Core com C# e Angular seguindo padrões de código como Clean Code, S.O.L.I.D e DDD com foco no usuário final",
+    "Criação de fluxos de CI/CD no Azure",
+    "Criação e atualização de microsserviços e APIs RESTful para uso no sistema",
+    "Atualização de bancos de dados relacionais como SQL Server",
+    "Utilização de Git para versionamento de código"
+  ],
+
+  "role1": "Estagiário de Engenharia da Informação",
+  "company1": "Embraer",
+  "startTime1": "Abr. 2021",
+  "endTime1": "Abr. 2022",
+  "topics1": [
     "Concepção e desenvolvimento de softwares internos.",
     "Manutenção, atualização e merge de diferentes bancos de dados.",
     "Refatoração das ferramentas internas."
   ],
 
-  "role1": "Desenvolvedor Full Stack",
-  "company1": "Comp Júnior",
-  "startTime1": "Nov. 2020",
-  "endTime1": "Jul. 2022",
-  "topics1": [
+  "role2": "Desenvolvedor Full Stack",
+  "company2": "Comp Júnior",
+  "startTime2": "Nov. 2020",
+  "endTime2": "Jul. 2022",
+  "topics2": [
     "Criação de dashboards dinâmicos e interativos utilizando padrão MVC e atualização de bancos de dados.",
     "Desenvolvimento de websites estáticos e dinâmicos, utilizando as mais modernas tecnologias web.",
     "Construção e manutenção de backlog e gerenciamento de reuniões de scrum."
   ],
 
-  "role2": "Analista de Garantia de Qualidade de Software",
-  "company2": "Global Technologies",
-  "startTime2": "Fev. 2021",
-  "endTime2": "Abr. 2021",
-  "topics2": [
+  "role3": "Analista de Garantia de Qualidade de Software",
+  "company3": "Global Technologies",
+  "startTime3": "Fev. 2021",
+  "endTime3": "Abr. 2021",
+  "topics3": [
     "Manutenção dos padrões de qualidade de software através do scrum.",
     "Padronização de protocolos.",
     "Criação de documentação para manutenção do backlog do time de desenvolvimento."

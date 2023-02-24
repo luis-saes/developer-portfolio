@@ -1,9 +1,4 @@
-import React, {
-  FunctionComponent,
-  SVGProps,
-  useContext,
-  useState,
-} from "react";
+import React, { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import CustomTitle from "../components/Generics/CustomTitle";
 import GenericSectionsButton from "../components/Generics/GenericSectionsButton";
@@ -46,18 +41,18 @@ const Skills = () => {
           </div>
         ))}
       </div>
-      <div className={styles.skillCardWrapper}>
+      <ul className={styles.skillCardWrapper}>
         {SkillsList.filter(filterByCategory).map((el) => (
-          <div className={styles.skillCard} key={el.text}>
+          <li className={styles.skillCard} key={el.text}>
             <SkillProgress
               key={el.text}
               icon={el.element}
               text={el.text}
               percentage={el.percentage}
             />
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

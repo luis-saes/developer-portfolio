@@ -5,6 +5,15 @@ import { ReactComponent as Hhs } from "../../assets/svg/projects/hhs.svg";
 import { ReactComponent as Construpontes } from "../../assets/svg/projects/construpontes.svg";
 import { ReactComponent as ComingSoon } from "../../assets/svg/projects/coming-soon.svg";
 
+export interface CompaniesListInterface {
+  icon: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
+  link: string;
+}
+
 const CompaniesList = [
   {
     icon: Dashboard,

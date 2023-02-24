@@ -1,10 +1,14 @@
-import React, { useContext } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import styles from "./SkillProgress.module.scss";
 
 type PrivateProps = {
-  icon: any;
+  icon: FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
   text: string;
   percentage: number;
 };

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { FunctionComponent, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { ThemeContext } from "../../context/ThemeContext";
 import GenericSectionsButton from "../Generics/GenericSectionsButton";
@@ -6,7 +6,11 @@ import styles from "./PortfolioCard.module.scss";
 
 type PrivateProps = {
   title: string;
-  Icon: any;
+  Icon: FunctionComponent<
+    React.SVGProps<SVGSVGElement> & {
+      title?: string | undefined;
+    }
+  >;
   stack: string;
   link: string;
 };

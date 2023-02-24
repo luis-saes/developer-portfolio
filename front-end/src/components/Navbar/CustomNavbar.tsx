@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { RefObject, useContext, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import Container from "react-bootstrap/Container";
@@ -14,22 +14,25 @@ import { ReactComponent as LogoLight } from "../../assets/svg/navbar-light.svg";
 import styles from "./CustomNavbar.module.scss";
 
 type PrivateProps = {
-  refs: any[];
+  refs: RefObject<HTMLDivElement>[];
 };
 
 const CustomNavbar = (props: PrivateProps) => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
-  const [expanded, setExpanded] = useState<any>(false);
+  const [expanded, setExpanded] = useState<boolean>(false);
 
   const { width } = WindowDimensions();
 
   const onClickLink = (index: number) => {
     setExpanded(false);
-    window.scrollTo({
-      top: props.refs[index].current?.offsetTop - 80,
-      behavior: "smooth",
-    });
+    const currentRef = props.refs[index].current;
+    if (currentRef) {
+      window.scrollTo({
+        top: currentRef.offsetTop - 80,
+        behavior: "smooth",
+      });
+    }
   };
 
   const genericButtons = [
@@ -74,7 +77,7 @@ const CustomNavbar = (props: PrivateProps) => {
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className={styles.toggle}
-          onClick={() => setExpanded(expanded ? false : "expanded")}
+          onClick={() => setExpanded(expanded ? false : true)}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,6 +116,7 @@ const CustomNavbar = (props: PrivateProps) => {
                 className={`border-left pl-2 ml-auto ${
                   width > 991 ? null : styles.themeButtonCompressed
                 }`}
+                onClick={() => setExpanded(expanded ? false : false)}
               >
                 <ThemeButton expanded={width > 991} />
               </Nav.Item>
