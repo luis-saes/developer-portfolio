@@ -1,9 +1,9 @@
+import { ReactComponent as API } from "../../assets/svg/projects/api.svg";
 import { ReactComponent as Calendar } from "../../assets/svg/projects/calendar.svg";
 import { ReactComponent as Dashboard } from "../../assets/svg/projects/dashboard.svg";
 import { ReactComponent as ShoeShop } from "../../assets/svg/projects/shoe-shop.svg";
 import { ReactComponent as Hhs } from "../../assets/svg/projects/hhs.svg";
 import { ReactComponent as Construpontes } from "../../assets/svg/projects/construpontes.svg";
-import { ReactComponent as ComingSoon } from "../../assets/svg/projects/coming-soon.svg";
 
 export interface CompaniesListInterface {
   icon: React.FunctionComponent<
@@ -15,6 +15,10 @@ export interface CompaniesListInterface {
 }
 
 const CompaniesList = [
+  {
+    icon: API,
+    link: "https://github.com/luis-saes/valid-password-api",
+  },
   {
     icon: Dashboard,
     link: "https://github.com/luis-saes/portfolio-dashboard",
@@ -34,10 +38,6 @@ const CompaniesList = [
   {
     icon: Construpontes,
     link: "https://pontedeconcreto.com.br/",
-  },
-  {
-    icon: ComingSoon,
-    link: "https://github.com/luis-saes",
   },
 ];
 
