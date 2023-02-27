@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/developer-portfolio/static/css/main.a050559a.css",
-    "main.js": "/developer-portfolio/static/js/main.51d09dc8.js",
+    "main.js": "/developer-portfolio/static/js/main.f2ee6a2a.js",
     "static/media/3d-cropped.png": "/developer-portfolio/static/media/3d-cropped.41c2463b6f5af2a352c9.png",
     "static/media/questrial-regular.ttf": "/developer-portfolio/static/media/questrial-regular.8268e81790f4302669b7.ttf",
     "static/media/sf-pro-text-regular.ttf": "/developer-portfolio/static/media/sf-pro-text-regular.6c476e49e88b29f603fb.ttf",
@@ -33,6 +33,7 @@
     "static/media/csharp.svg": "/developer-portfolio/static/media/csharp.1157fafb9b9190a80b6e5045198d691d.svg",
     "static/media/vscode.svg": "/developer-portfolio/static/media/vscode.e158c4dd6e3854918c8e987a5d42bb58.svg",
     "static/media/cpp.svg": "/developer-portfolio/static/media/cpp.22e5498760aca41d946e2b1c37fdfa33.svg",
+    "static/media/api.svg": "/developer-portfolio/static/media/api.47d27bf895da5321621c712af0f1555a.svg",
     "static/media/linkedin.svg": "/developer-portfolio/static/media/linkedin.eb169a3fbfb9ec6b800dc9df04ea93cc.svg",
     "static/media/navbar-light.svg": "/developer-portfolio/static/media/navbar-light.2bac5893a53ab961abd10f07494e6037.svg",
     "static/media/navbar-dark.svg": "/developer-portfolio/static/media/navbar-dark.71614d3eafdc6fbcd2208e9186419e40.svg",
@@ -46,7 +47,6 @@
     "static/media/css.svg": "/developer-portfolio/static/media/css.6ebc2428f258a6ed05fc8941a1674cf5.svg",
     "static/media/gt.svg": "/developer-portfolio/static/media/gt.07af41122c988766ddc6a74a4be8da00.svg",
     "static/media/html.svg": "/developer-portfolio/static/media/html.5595000412d7b478279c5c149f7bfbdc.svg",
-    "static/media/coming-soon.svg": "/developer-portfolio/static/media/coming-soon.27b2a619032885d42986dad1dd43c7a3.svg",
     "static/media/javascript.svg": "/developer-portfolio/static/media/javascript.e64911a79b8bdd6cf5e8003553698741.svg",
     "static/media/medium.svg": "/developer-portfolio/static/media/medium.ad449c58a6a23e1b1567b8a035058702.svg",
     "static/media/sql.svg": "/developer-portfolio/static/media/sql.7d8d83285068913aa320eaf2b02c10c1.svg",
@@ -60,10 +60,10 @@
     "static/media/embraer.svg": "/developer-portfolio/static/media/embraer.74b287718cd289b01c28dfbf2505671e.svg",
     "static/media/vue.svg": "/developer-portfolio/static/media/vue.2554c94816790883531e6544389d323c.svg",
     "main.a050559a.css.map": "/developer-portfolio/static/css/main.a050559a.css.map",
-    "main.51d09dc8.js.map": "/developer-portfolio/static/js/main.51d09dc8.js.map"
+    "main.f2ee6a2a.js.map": "/developer-portfolio/static/js/main.f2ee6a2a.js.map"
   },
   "entrypoints": [
     "static/css/main.a050559a.css",
-    "static/js/main.51d09dc8.js"
+    "static/js/main.f2ee6a2a.js"
   ]
 }
