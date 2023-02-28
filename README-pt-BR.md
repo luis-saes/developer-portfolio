@@ -12,6 +12,8 @@
 
 Este portfólio de desenvolvedor, feito do zero por mim, conta um pouco sobre minha pessoa, meus sonhos e minha jornada como desenvolvedor. Coloquei meu coração neste projeto e espero que possa ajudar alguém a construir seu próprio portfólio.
 
+Também é possível conferir a ![Versão _deployada_ Deste Portfólio](https://luis-saes.github.io/developer-portfolio/)
+
 ## Design
 
 O design foi feito utilizando o Figma. Você pode checar o ![arquivo de design](https://www.figma.com/file/QGfGc9Jc5zXMAtfVC9YPFg/Portfolio-Website).
