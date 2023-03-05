@@ -12,7 +12,7 @@
 
 This developer portfolio, made from scratch by me, tells a little about myself, my dreams and my journey as a developer. I put my heart into this project and I hope it can help someone build their own portfolio.
 
-Furthermore, you may want to take a look at the ![Deployed Version of this Portfolio](https://luis-saes.github.io/developer-portfolio/)
+Furthermore, you may want to take a look at the [Deployed Version of this Portfolio](https://luis-saes.github.io/developer-portfolio/)
 
 ## Design
 
